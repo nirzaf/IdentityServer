@@ -3,6 +3,7 @@
 
 
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Default;
 
 namespace IdentityServerHost.Extensions;
 

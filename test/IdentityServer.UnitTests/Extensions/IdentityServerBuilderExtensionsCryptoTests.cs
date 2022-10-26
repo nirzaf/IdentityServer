@@ -7,6 +7,7 @@ using System.IO;
 using System.Security.Cryptography;
 using Duende.IdentityServer;
 using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Xunit;

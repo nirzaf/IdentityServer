@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Storage.Stores;
 using FluentAssertions;

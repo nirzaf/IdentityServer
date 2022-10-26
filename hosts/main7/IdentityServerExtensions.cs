@@ -3,6 +3,11 @@
 
 using System.Security.Cryptography.X509Certificates;
 using Duende.IdentityServer;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Duende.IdentityServer.Hosting.DynamicProviders.Oidc;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Test;
 using IdentityModel;
 using IdentityServerHost.Extensions;
 using IdentityServerHost.Pages;
@@ -32,8 +37,8 @@ internal static class IdentityServerExtensions
             .AddInMemoryApiScopes(Resources.ApiScopes)
             .AddInMemoryApiResources(Resources.ApiResources)
             //.AddStaticSigningCredential()
-            .AddExtensionGrantValidator<Extensions.ExtensionGrantValidator>()
-            .AddExtensionGrantValidator<Extensions.NoSubjectExtensionGrantValidator>()
+            .AddExtensionGrantValidator<ExtensionGrantValidator>()
+            .AddExtensionGrantValidator<NoSubjectExtensionGrantValidator>()
             .AddJwtBearerClientAuthentication()
             .AddAppAuthRedirectUriValidator()
             .AddTestUsers(TestUsers.Users)
@@ -43,7 +48,7 @@ internal static class IdentityServerExtensions
             .AddMutualTlsSecretValidators()
             .AddInMemoryOidcProviders(new[]
             {
-                new Duende.IdentityServer.Models.OidcProvider
+                new OidcProvider
                 {
                     Scheme = "dynamicprovider-idsvr",
                     DisplayName = "IdentityServer (via Dynamic Providers)",

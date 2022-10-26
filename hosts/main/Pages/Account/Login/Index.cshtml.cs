@@ -1,5 +1,6 @@
 using Duende.IdentityServer;
 using Duende.IdentityServer.Events;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models.Messages;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Storage.Stores;

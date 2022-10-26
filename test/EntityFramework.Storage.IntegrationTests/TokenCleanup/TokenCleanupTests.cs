@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 using Duende.IdentityServer.EntityFramework.Storage.DbContexts;
 using Duende.IdentityServer.EntityFramework.Storage.Entities;
 using Duende.IdentityServer.EntityFramework.Storage.Interfaces;
