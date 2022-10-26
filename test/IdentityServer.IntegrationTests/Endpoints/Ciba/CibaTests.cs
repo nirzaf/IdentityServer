@@ -6,7 +6,6 @@ using Duende.IdentityServer;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Test;
 using FluentAssertions;
-using IntegrationTests.Common;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -19,6 +18,9 @@ using Duende.IdentityServer.Validation;
 using Duende.IdentityServer.Services;
 using System.Text.Json;
 using System.IdentityModel.Tokens.Jwt;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using IdentityServer.IntegrationTests.Common;
 using Microsoft.IdentityModel.Tokens;
 using static Duende.IdentityServer.IdentityServerConstants;
 

@@ -4,11 +4,11 @@
 
 using System;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
 using Microsoft.AspNetCore.Http;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// Abstracts issuer name access

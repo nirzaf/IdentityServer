@@ -10,14 +10,15 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel;
-using IntegrationTests.Common;
+using IdentityServer.IntegrationTests.Common;
 using Microsoft.AspNetCore.Authentication;
 using Xunit;
 
-namespace IntegrationTests.Hosting;
+namespace IdentityServer.IntegrationTests.Hosting;
 
 public class FederatedSignoutTests
 {

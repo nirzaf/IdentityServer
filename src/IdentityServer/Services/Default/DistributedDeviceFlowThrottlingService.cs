@@ -4,13 +4,14 @@
 
 using System;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Caching.Distributed;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// The default device flow throttling service using IDistributedCache.

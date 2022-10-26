@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Models a parsed scope value.

@@ -2,11 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
+using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
 using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// Nop implementation of IUserLoginService.

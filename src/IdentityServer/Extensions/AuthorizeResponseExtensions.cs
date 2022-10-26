@@ -2,12 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
 using System.Collections.Specialized;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.ResponseHandling;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.ResponseHandling.Models;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Extensions;
 
 internal static class AuthorizeResponseExtensions
 {

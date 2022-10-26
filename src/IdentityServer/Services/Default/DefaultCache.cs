@@ -2,14 +2,15 @@
 // See LICENSE in the project root for license information.
 
 
-using System.Threading.Tasks;
-using Microsoft.Extensions.Caching.Memory;
 using System;
+using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Infrastructure.ConcurrencyLock;
+using Duende.IdentityServer.Logging;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
-using Duende.IdentityServer.Internal;
-using Duende.IdentityServer.Configuration;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// IMemoryCache-based implementation of the cache

@@ -6,7 +6,7 @@ using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.IdentityModel.Tokens;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 internal static class TestCert
 {

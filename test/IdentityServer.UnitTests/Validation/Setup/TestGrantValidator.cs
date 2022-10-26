@@ -5,8 +5,10 @@
 using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Contexts;
+using Duende.IdentityServer.Validation.Models;
 
-namespace UnitTests.Validation.Setup;
+namespace IdentityServer.UnitTests.Validation.Setup;
 
 internal class TestGrantValidator : IExtensionGrantValidator
 {

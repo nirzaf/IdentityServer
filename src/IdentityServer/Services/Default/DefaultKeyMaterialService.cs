@@ -2,17 +2,17 @@
 // See LICENSE in the project root for license information.
 
 
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.IdentityModel.Tokens;
-using System.Linq;
 using System;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Services.KeyManagement;
+using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Services.Default.KeyManagement;
+using Duende.IdentityServer.Stores;
+using Microsoft.IdentityModel.Tokens;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// The default key material service

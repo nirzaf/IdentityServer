@@ -4,8 +4,10 @@
 using System.Net;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Endpoints.Results;
 using Duende.IdentityServer.Hosting;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.ResponseHandling;
 using Duende.IdentityServer.Services;
 using Microsoft.AspNetCore.Http;

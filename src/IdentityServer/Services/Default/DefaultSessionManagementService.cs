@@ -1,14 +1,16 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
-using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Contexts;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Stores;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// Default session management service

@@ -2,26 +2,26 @@
 // See LICENSE in the project root for license information.
 
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
+using Duende.IdentityServer.EntityFramework.Storage.Interfaces;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.Storage.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Services;
+using Duende.IdentityServer.Storage.Stores;
 using Microsoft.EntityFrameworkCore;
-using System;
-using Duende.IdentityServer.EntityFramework.Entities;
-using Duende.IdentityServer.EntityFramework.Interfaces;
-using Duende.IdentityServer.EntityFramework.Mappers;
-using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Services;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.EntityFramework.Stores;
+namespace Duende.IdentityServer.EntityFramework.Storage.Stores;
 
 /// <summary>
 /// Implementation of IPersistedGrantStore thats uses EF.
 /// </summary>
 /// <seealso cref="IPersistedGrantStore" />
-public class PersistedGrantStore : Duende.IdentityServer.Stores.IPersistedGrantStore
+public class PersistedGrantStore : IPersistedGrantStore
 {
     /// <summary>
     /// The DbContext.
@@ -52,7 +52,7 @@ public class PersistedGrantStore : Duende.IdentityServer.Stores.IPersistedGrantS
     }
 
     /// <inheritdoc/>
-    public virtual async Task StoreAsync(Duende.IdentityServer.Models.PersistedGrant token)
+    public virtual async Task StoreAsync(PersistedGrant token)
     {
         using var activity = Tracing.StoreActivitySource.StartActivity("PersistedGrantStore.Store");
         
@@ -84,7 +84,7 @@ public class PersistedGrantStore : Duende.IdentityServer.Stores.IPersistedGrantS
     }
 
     /// <inheritdoc/>
-    public virtual async Task<Duende.IdentityServer.Models.PersistedGrant> GetAsync(string key)
+    public virtual async Task<PersistedGrant> GetAsync(string key)
     {
         using var activity = Tracing.StoreActivitySource.StartActivity("PersistedGrantStore.Get");
         
@@ -99,7 +99,7 @@ public class PersistedGrantStore : Duende.IdentityServer.Stores.IPersistedGrantS
     }
 
     /// <inheritdoc/>
-    public virtual async Task<IEnumerable<Duende.IdentityServer.Models.PersistedGrant>> GetAllAsync(PersistedGrantFilter filter)
+    public virtual async Task<IEnumerable<PersistedGrant>> GetAllAsync(PersistedGrantFilter filter)
     {
         using var activity = Tracing.StoreActivitySource.StartActivity("PersistedGrantStore.GetAll");
         
@@ -171,7 +171,7 @@ public class PersistedGrantStore : Duende.IdentityServer.Stores.IPersistedGrantS
     }
 
 
-    private IQueryable<PersistedGrant> Filter(IQueryable<PersistedGrant> query, PersistedGrantFilter filter)
+    private IQueryable<Entities.PersistedGrant> Filter(IQueryable<Entities.PersistedGrant> query, PersistedGrantFilter filter)
     {
         if (filter.ClientIds != null)
         {

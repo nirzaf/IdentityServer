@@ -6,9 +6,9 @@
 
 using System;
 using System.Collections.Generic;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.EntityFramework.Entities;
+namespace Duende.IdentityServer.EntityFramework.Storage.Entities;
 
 public class Client
 {

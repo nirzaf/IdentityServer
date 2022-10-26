@@ -2,10 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Validation;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
 
-namespace UnitTests.Validation.Setup;
+namespace IdentityServer.UnitTests.Validation.Setup;
 
 internal class TestBackchannelAuthenticationRequestIdValidator : IBackchannelAuthenticationRequestIdValidator
 {

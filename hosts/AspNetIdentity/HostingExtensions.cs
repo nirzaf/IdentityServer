@@ -2,6 +2,8 @@
 // See LICENSE in the project root for license information.
 
 using Duende.IdentityServer;
+using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection;
 using IdentityServerHost.Data;
 using IdentityServerHost.Models;
 using Microsoft.AspNetCore.Identity;

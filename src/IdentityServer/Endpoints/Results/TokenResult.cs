@@ -11,6 +11,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Hosting;
 using Duende.IdentityServer.ResponseHandling;
+using Duende.IdentityServer.ResponseHandling.Models;
 
 namespace Duende.IdentityServer.Endpoints.Results;
 

@@ -4,8 +4,10 @@
 
 using System.Collections.Generic;
 using AutoMapper;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Secret = Duende.IdentityServer.Storage.Models.Secret;
 
-namespace Duende.IdentityServer.EntityFramework.Mappers;
+namespace Duende.IdentityServer.EntityFramework.Storage.Mappers;
 
 /// <summary>
 /// Defines entity/model mapping for API resources.
@@ -18,26 +20,26 @@ public class ApiResourceMapperProfile : Profile
     /// </summary>
     public ApiResourceMapperProfile()
     {
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.ApiResourceProperty, KeyValuePair<string, string>>()
+        CreateMap<ApiResourceProperty, KeyValuePair<string, string>>()
             .ReverseMap();
 
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.ApiResource, Models.ApiResource>(MemberList.Destination)
-            .ConstructUsing(src => new Models.ApiResource())
+        CreateMap<ApiResource, IdentityServer.Storage.Models.ApiResource>(MemberList.Destination)
+            .ConstructUsing(src => new IdentityServer.Storage.Models.ApiResource())
             .ForMember(x => x.ApiSecrets, opts => opts.MapFrom(x => x.Secrets))
             .ForMember(x=>x.AllowedAccessTokenSigningAlgorithms, opts => opts.ConvertUsing(AllowedSigningAlgorithmsConverter.Converter, x=>x.AllowedAccessTokenSigningAlgorithms))
             .ReverseMap()
             .ForMember(x => x.AllowedAccessTokenSigningAlgorithms, opts => opts.ConvertUsing(AllowedSigningAlgorithmsConverter.Converter, x => x.AllowedAccessTokenSigningAlgorithms));
 
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.ApiResourceClaim, string>()
+        CreateMap<ApiResourceClaim, string>()
             .ConstructUsing(x => x.Type)
             .ReverseMap()
             .ForMember(dest => dest.Type, opt => opt.MapFrom(src => src));
 
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.ApiResourceSecret, Models.Secret>(MemberList.Destination)
+        CreateMap<ApiResourceSecret, Secret>(MemberList.Destination)
             .ForMember(dest => dest.Type, opt => opt.Condition(srs => srs != null))
             .ReverseMap();
 
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.ApiResourceScope, string>()
+        CreateMap<ApiResourceScope, string>()
             .ConstructUsing(x => x.Scope)
             .ReverseMap()
             .ForMember(dest => dest.Scope, opt => opt.MapFrom(src => src));

@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Storage.Models;
 
 /// <summary>
 /// A model for a persisted grant

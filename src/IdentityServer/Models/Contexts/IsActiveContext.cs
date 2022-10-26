@@ -2,11 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
 using System;
 using System.Security.Claims;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Models.Contexts;
 
 /// <summary>
 /// Context describing the is-active check

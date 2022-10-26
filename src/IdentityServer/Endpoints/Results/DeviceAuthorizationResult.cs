@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Duende.IdentityServer.Hosting;
 using Duende.IdentityServer.ResponseHandling;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.ResponseHandling.Models;
 using Microsoft.AspNetCore.Http;
 
 namespace Duende.IdentityServer.Endpoints.Results;

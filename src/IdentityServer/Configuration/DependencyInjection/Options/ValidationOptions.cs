@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.Options;
 
 /// <summary>
 /// The ValidationOptions contains settings that affect some of the default validation behavior.

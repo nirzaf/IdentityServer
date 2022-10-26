@@ -6,16 +6,16 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Services.Default;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.Services.Default;
+namespace IdentityServer.UnitTests.Services.Default;
 
 public class DefaultClaimsServiceTests
 {

@@ -1,15 +1,15 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Services.Default;
 using FluentAssertions;
+using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.Services.Default;
+namespace IdentityServer.UnitTests.Services.Default;
 
 public class OidcReturnUrlParserTests
 {

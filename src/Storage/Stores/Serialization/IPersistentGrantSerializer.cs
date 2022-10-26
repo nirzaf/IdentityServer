@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Duende.IdentityServer.Stores.Serialization;
+namespace Duende.IdentityServer.Storage.Stores.Serialization;
 
 /// <summary>
 /// Interface for persisted grant serialization

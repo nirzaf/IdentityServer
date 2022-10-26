@@ -2,12 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Duende.IdentityServer.Storage.Extensions;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Storage.Models;
 
 /// <summary>
 /// Models a user identity resource.

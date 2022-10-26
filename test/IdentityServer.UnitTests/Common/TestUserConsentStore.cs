@@ -3,12 +3,14 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Stores.Serialization;
+using Duende.IdentityServer.Services.Default;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Storage.Stores.Serialization;
+using Duende.IdentityServer.Stores.Default;
+using Duende.IdentityServer.Stores.InMemory;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 public class TestUserConsentStore : IUserConsentStore
 {

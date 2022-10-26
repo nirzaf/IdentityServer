@@ -1,18 +1,19 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Configuration;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Duende.IdentityServer.Configuration.DependencyInjection;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Validation.Default;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.Hosting.DynamicProviders;
+namespace Duende.IdentityServer.Hosting.DynamicProviders.DynamicSchemes;
 
 class DynamicAuthenticationSchemeProvider : IAuthenticationSchemeProvider
 {

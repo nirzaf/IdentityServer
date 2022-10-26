@@ -14,6 +14,10 @@ using Microsoft.Extensions.Logging;
 using Duende.IdentityServer.Events;
 using IdentityModel;
 using System.IO;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.ResponseHandling.Models;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Endpoints;
 

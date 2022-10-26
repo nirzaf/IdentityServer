@@ -2,14 +2,15 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Models;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Contexts;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Default client configuration validator

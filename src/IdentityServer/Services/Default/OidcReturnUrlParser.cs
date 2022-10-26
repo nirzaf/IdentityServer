@@ -3,16 +3,17 @@
 
 
 using System;
-using System.Threading.Tasks;
-using Duende.IdentityServer.Extensions;
-using Microsoft.Extensions.Logging;
 using System.Collections.Specialized;
-using Duende.IdentityServer.Models;
+using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Models.Messages;
 using Duende.IdentityServer.Stores;
 using Duende.IdentityServer.Validation;
-using Duende.IdentityServer.Configuration;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 internal class OidcReturnUrlParser : IReturnUrlParser
 {

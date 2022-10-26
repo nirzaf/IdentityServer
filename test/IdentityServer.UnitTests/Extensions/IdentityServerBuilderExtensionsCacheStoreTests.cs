@@ -5,14 +5,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
-namespace UnitTests.Extensions;
+namespace IdentityServer.UnitTests.Extensions;
 
 public class IdentityServerBuilderExtensionsCacheStoreTests
 {

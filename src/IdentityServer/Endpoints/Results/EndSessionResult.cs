@@ -8,12 +8,15 @@ using Microsoft.Extensions.DependencyInjection;
 using Duende.IdentityServer.Extensions;
 using System;
 using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Hosting;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
 using Duende.IdentityServer.Stores;
 using Duende.IdentityServer.Validation;
 using Microsoft.AspNetCore.Authentication;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Endpoints.Results;
 

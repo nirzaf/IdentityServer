@@ -1,7 +1,9 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using IdentityServerHost.Configuration;
+using Duende.IdentityServer.AspNetIdentity;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 using IdentityServerHost.Models;
 
 namespace IdentityServerHost;

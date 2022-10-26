@@ -7,11 +7,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Validator for an X.509 certificate based client secret using the thumbprint
@@ -40,7 +43,7 @@ public class X509ThumbprintSecretValidator : ISecretValidator
             return fail;
         }
 
-        if (!(parsedSecret.Credential is X509Certificate2 cert))
+        if (parsedSecret.Credential is not X509Certificate2 cert)
         {
             throw new InvalidOperationException("Credential is not a x509 certificate.");
         }
@@ -48,29 +51,27 @@ public class X509ThumbprintSecretValidator : ISecretValidator
         var thumbprint = cert.Thumbprint;
         if (thumbprint == null)
         {
-            _logger.LogWarning("No thumbprint found in X509 certificate.");
+            _logger.LogWarning("No thumbprint found in X509 certificate");
             return fail;
         }
 
         var thumbprintSecrets = secrets.Where(s => s.Type == IdentityServerConstants.SecretTypes.X509CertificateThumbprint);
-        if (!thumbprintSecrets.Any())
+        var enumerable = thumbprintSecrets.ToList();
+        if (!enumerable.Any())
         {
             _logger.LogDebug("No thumbprint secrets configured for client.");
             return fail;
         }
 
-        foreach (var thumbprintSecret in thumbprintSecrets)
+        if (enumerable.Any(thumbprintSecret => thumbprint.Equals(thumbprintSecret.Value, StringComparison.OrdinalIgnoreCase)))
         {
-            if (thumbprint.Equals(thumbprintSecret.Value, StringComparison.OrdinalIgnoreCase))
+            var result = new SecretValidationResult
             {
-                var result = new SecretValidationResult
-                {
-                    Success = true,
-                    Confirmation = cert.CreateThumbprintCnf()
-                };
+                Success = true,
+                Confirmation = cert.CreateThumbprintCnf()
+            };
 
-                return Task.FromResult(result);
-            }
+            return Task.FromResult(result);
         }
 
         _logger.LogDebug("No matching x509 thumbprint secret found.");

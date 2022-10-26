@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer;
+namespace Duende.IdentityServer.Storage;
 
 internal static class IdentityServerConstants
 {

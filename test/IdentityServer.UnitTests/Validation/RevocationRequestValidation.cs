@@ -6,14 +6,17 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Default;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.Validation;
+namespace IdentityServer.UnitTests.Validation;
 
 public class RevocationRequestValidation
 {

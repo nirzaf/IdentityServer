@@ -2,11 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Default;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Validation;
+namespace IdentityServer.UnitTests.Validation;
 
 /// <summary>
 /// Tests for ResponseTypeEqualityComparer

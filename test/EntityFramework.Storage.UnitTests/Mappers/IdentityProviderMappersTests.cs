@@ -2,12 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.EntityFramework.Mappers;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.Storage.Models;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Mappers;
+namespace EntityFramework.Storage.UnitTests.Mappers;
 
 public class IdentityProviderMappersTests
 {

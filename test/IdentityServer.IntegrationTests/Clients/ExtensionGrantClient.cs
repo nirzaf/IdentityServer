@@ -14,12 +14,12 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using IdentityModel;
 using IdentityModel.Client;
-using IntegrationTests.Clients.Setup;
+using IdentityServer.IntegrationTests.Clients.Setup;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Xunit;
 
-namespace IntegrationTests.Clients;
+namespace IdentityServer.IntegrationTests.Clients;
 
 public class ExtensionGrantClient
 {

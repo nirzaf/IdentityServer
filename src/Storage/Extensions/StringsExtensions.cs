@@ -4,7 +4,7 @@
 
 using System.Diagnostics;
 
-namespace Duende.IdentityServer.Extensions;
+namespace Duende.IdentityServer.Storage.Extensions;
 
 internal static class StringExtensions
 {

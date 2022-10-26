@@ -10,13 +10,15 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 using FluentAssertions;
 using IdentityModel;
-using IntegrationTests.Common;
+using IdentityServer.IntegrationTests.Common;
 using Xunit;
 
-namespace IntegrationTests.Endpoints.DeviceAuthorization;
+namespace IdentityServer.IntegrationTests.Endpoints.DeviceAuthorization;
 
 public class DeviceAuthorizationTests
 {

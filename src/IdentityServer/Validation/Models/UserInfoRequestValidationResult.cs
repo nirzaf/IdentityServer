@@ -4,7 +4,7 @@
 
 using System.Security.Claims;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Validation result for userinfo requests

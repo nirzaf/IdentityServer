@@ -2,18 +2,18 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Collections.Specialized;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Extensions;
 
 public static class ValidatedAuthorizeRequestExtensions
 {

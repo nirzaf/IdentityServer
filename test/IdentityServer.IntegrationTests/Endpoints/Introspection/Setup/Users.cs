@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using Duende.IdentityServer.Test;
 
-namespace IntegrationTests.Endpoints.Introspection.Setup;
+namespace IdentityServer.IntegrationTests.Endpoints.Introspection.Setup;
 
 public static class Users
 {

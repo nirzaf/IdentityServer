@@ -14,6 +14,8 @@ using Duende.IdentityServer.Validation;
 using Duende.IdentityServer.Extensions;
 using System.Text.Encodings.Web;
 using System.Text;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Endpoints.Results;
 

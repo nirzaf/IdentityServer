@@ -1,16 +1,17 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Stores;
-using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Models.Contexts;
+using Duende.IdentityServer.Storage.Stores;
+using IdentityModel;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// Default implementation of logout notification service.

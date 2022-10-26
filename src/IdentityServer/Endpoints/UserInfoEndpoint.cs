@@ -9,8 +9,10 @@ using Microsoft.AspNetCore.Http;
 using System.Net;
 using Duende.IdentityServer.Endpoints.Results;
 using Duende.IdentityServer.Hosting;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.ResponseHandling;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Default;
 
 namespace Duende.IdentityServer.Endpoints;
 

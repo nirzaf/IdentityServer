@@ -3,10 +3,10 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Models;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 public class MockJwtRequestUriHttpClient : IJwtRequestUriHttpClient
 {

@@ -5,6 +5,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Validation;
 

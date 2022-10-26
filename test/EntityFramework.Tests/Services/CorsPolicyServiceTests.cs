@@ -2,21 +2,21 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.EntityFramework.DbContexts;
-using Duende.IdentityServer.EntityFramework.Interfaces;
-using Duende.IdentityServer.EntityFramework.Mappers;
-using Duende.IdentityServer.EntityFramework.Options;
-using Duende.IdentityServer.EntityFramework.Services;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Duende.IdentityServer.EntityFramework.Services;
+using Duende.IdentityServer.EntityFramework.Storage.DbContexts;
+using Duende.IdentityServer.EntityFramework.Storage.Interfaces;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.EntityFramework.Storage.Options;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
-namespace Tests.Services;
+namespace EntityFramework.Tests.Services;
 
 public class CorsPolicyServiceTests : IntegrationTest<CorsPolicyServiceTests, ConfigurationDbContext, ConfigurationStoreOptions>
 {

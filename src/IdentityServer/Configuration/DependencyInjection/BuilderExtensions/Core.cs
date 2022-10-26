@@ -2,36 +2,42 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Configuration.DependencyInjection;
-using Duende.IdentityServer.Endpoints;
-using Duende.IdentityServer.Events;
-using Duende.IdentityServer.Hosting;
-using Duende.IdentityServer.ResponseHandling;
-using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Stores.Serialization;
-using Duende.IdentityServer.Validation;
-using Microsoft.AspNetCore.Cors.Infrastructure;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Extensions.Options;
 using System;
 using System.Linq;
-using Duende.IdentityServer.Models;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication;
-using static Duende.IdentityServer.Constants;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Endpoints;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Hosting;
+using Duende.IdentityServer.Hosting.DynamicProviders.DynamicSchemes;
+using Duende.IdentityServer.Hosting.DynamicProviders.Store;
 using Duende.IdentityServer.Hosting.FederatedSignOut;
+using Duende.IdentityServer.Infrastructure;
+using Duende.IdentityServer.Infrastructure.ConcurrencyLock;
+using Duende.IdentityServer.Models.Contexts;
+using Duende.IdentityServer.Models.Messages;
+using Duende.IdentityServer.ResponseHandling;
+using Duende.IdentityServer.ResponseHandling.Default;
+using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Services.Default;
-using Duende.IdentityServer.Services.KeyManagement;
+using Duende.IdentityServer.Services.Default.KeyManagement;
+using Duende.IdentityServer.Storage.Services;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Storage.Stores.Serialization;
+using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Stores.Default;
+using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Default;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Cors.Infrastructure;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
-using Duende.IdentityServer.Hosting.DynamicProviders;
-using Duende.IdentityServer.Internal;
+using Microsoft.Extensions.Options;
+using static Duende.IdentityServer.Constants;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 
 /// <summary>
 /// Builder extension methods for registering core services

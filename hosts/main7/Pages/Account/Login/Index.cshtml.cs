@@ -1,15 +1,13 @@
 using Duende.IdentityServer;
 using Duende.IdentityServer.Events;
-using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Stores;
 using Duende.IdentityServer.Test;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace IdentityServerHost.Pages.Login;
+namespace IdentityServerHost.Pages.Account.Login;
 
 [SecurityHeaders]
 [AllowAnonymous]
@@ -191,8 +189,7 @@ public class Index : PageModel
                 AuthenticationScheme = x.Name
             }).ToList();
 
-        var dyanmicSchemes = (await _identityProviderStore.GetAllSchemeNamesAsync())
-            .Where(x => x.Enabled)
+        var dyanmicSchemes = Enumerable.Where((await _identityProviderStore.GetAllSchemeNamesAsync()), x => x.Enabled)
             .Select(x => new ViewModel.ExternalProvider
             {
                 AuthenticationScheme = x.Scheme,

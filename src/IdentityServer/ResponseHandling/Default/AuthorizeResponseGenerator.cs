@@ -2,20 +2,24 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Stores;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.ResponseHandling.Models;
 using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.ResponseHandling;
+namespace Duende.IdentityServer.ResponseHandling.Default;
 
 /// <summary>
 /// The authorize response generator

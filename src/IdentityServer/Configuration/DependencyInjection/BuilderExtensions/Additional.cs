@@ -2,19 +2,24 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.ResponseHandling;
-using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Validation;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
 using System.Net.Http;
-using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Hosting.DynamicProviders.Store;
+using Duende.IdentityServer.ResponseHandling;
+using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Services.Default;
+using Duende.IdentityServer.Storage.Services;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Stores.Caching;
+using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Default;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
-using Duende.IdentityServer.Hosting.DynamicProviders;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 
 /// <summary>
 /// Builder extension methods for registering additional services 

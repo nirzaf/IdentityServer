@@ -5,14 +5,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.InMemory;
 
 /// <summary>
 /// In-memory device flow store
 /// </summary>
-/// <seealso cref="IdentityServer.Stores.IDeviceFlowStore" />
+/// <seealso cref="IDeviceFlowStore" />
 public class InMemoryDeviceFlowStore : IDeviceFlowStore
 {
     private readonly List<InMemoryDeviceAuthorization> _repository = new List<InMemoryDeviceAuthorization>();

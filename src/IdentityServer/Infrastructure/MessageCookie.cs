@@ -2,19 +2,20 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Models.Messages;
 using Duende.IdentityServer.Services;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer;
+namespace Duende.IdentityServer.Infrastructure;
 
 internal class MessageCookie<TModel>
 {

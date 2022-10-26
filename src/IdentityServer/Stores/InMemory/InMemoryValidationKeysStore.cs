@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.InMemory;
 
 /// <summary>
 /// The default validation key store

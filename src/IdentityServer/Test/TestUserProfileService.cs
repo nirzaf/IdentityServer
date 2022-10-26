@@ -6,7 +6,9 @@ using Duende.IdentityServer.Extensions;
 using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Contexts;
 using Duende.IdentityServer.Services;
 
 namespace Duende.IdentityServer.Test;

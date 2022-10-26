@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Models.Contexts;
 
 /// <summary>
 /// Provides the context necessary to construct a logout notification.

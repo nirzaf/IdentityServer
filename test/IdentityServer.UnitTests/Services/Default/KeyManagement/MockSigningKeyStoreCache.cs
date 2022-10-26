@@ -1,11 +1,10 @@
-
-using Duende.IdentityServer.Services.KeyManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Services.Default.KeyManagement;
 
-namespace UnitTests.Services.Default.KeyManagement;
+namespace IdentityServer.UnitTests.Services.Default.KeyManagement;
 
 class MockSigningKeyStoreCache : ISigningKeyStoreCache
 {

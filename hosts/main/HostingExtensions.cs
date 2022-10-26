@@ -3,6 +3,9 @@
 
 using System.Security.Claims;
 using Duende.IdentityServer;
+using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Hosting.LocalApiAuthentication;
 using IdentityServerHost.Extensions;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.IdentityModel.Tokens;

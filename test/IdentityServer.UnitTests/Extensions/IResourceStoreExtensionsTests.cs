@@ -5,12 +5,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Extensions;
+namespace IdentityServer.UnitTests.Extensions;
 
 public class IResourceStoreExtensionsTests
 {

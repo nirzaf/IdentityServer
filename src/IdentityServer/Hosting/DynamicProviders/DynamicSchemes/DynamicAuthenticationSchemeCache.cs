@@ -1,11 +1,11 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Models;
 using System;
 using System.Collections.Concurrent;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.Hosting.DynamicProviders;
+namespace Duende.IdentityServer.Hosting.DynamicProviders.DynamicSchemes;
 // this is designed as a per-request cache is to ensure that a scheme loaded from the cache is still available later in the
 // request and made available anywhere else during this request (in case the static cache times out across 
 // 2 calls within the same request)

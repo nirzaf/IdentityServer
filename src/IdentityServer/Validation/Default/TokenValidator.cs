@@ -2,25 +2,29 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using System.IdentityModel.Tokens.Jwt;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.Logging.Models;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Contexts;
 using Duende.IdentityServer.Services;
-using Microsoft.IdentityModel.Tokens;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.JsonWebTokens;
+using Microsoft.IdentityModel.Tokens;
+using TokenValidationResult = Duende.IdentityServer.Validation.Models.TokenValidationResult;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 internal class TokenValidator : ITokenValidator
 {

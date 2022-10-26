@@ -7,16 +7,16 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Services.Default;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Stores.InMemory;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Microsoft.Extensions.Caching.Distributed;
 using Xunit;
-using Duende.IdentityServer.Stores;
 
-namespace UnitTests.Services.Default;
+namespace IdentityServer.UnitTests.Services.Default;
 
 public class DistributedDeviceFlowThrottlingServiceTests
 {

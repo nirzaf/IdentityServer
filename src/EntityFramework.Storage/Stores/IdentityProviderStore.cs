@@ -6,15 +6,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.EntityFramework.Interfaces;
-using Duende.IdentityServer.EntityFramework.Mappers;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.EntityFramework.Storage.Interfaces;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Services;
+using Duende.IdentityServer.Storage.Stores;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.EntityFramework.Stores;
+namespace Duende.IdentityServer.EntityFramework.Storage.Stores;
 
 /// <summary>
 /// Implementation of IClientStore thats uses EF.

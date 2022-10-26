@@ -13,7 +13,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Duende.IdentityServer.Stores;
 using Duende.IdentityServer.Models;
 using System.Collections.Generic;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Models.Messages;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Endpoints.Results;
 

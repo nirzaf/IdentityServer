@@ -6,11 +6,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 public class MockConsentService : IConsentService
 {

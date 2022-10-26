@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Storage.Models;
 
 /// <summary>
 /// Models the common data of API and identity resources.

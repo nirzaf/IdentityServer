@@ -2,18 +2,18 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
-using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
+using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Stores.InMemory;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using JsonWebKey = Microsoft.IdentityModel.Tokens.JsonWebKey;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 
 /// <summary>
 /// Builder extension methods for registering crypto services
@@ -29,7 +29,7 @@ public static class IdentityServerBuilderExtensionsCrypto
     public static IIdentityServerBuilder AddSigningCredential(this IIdentityServerBuilder builder, SigningCredentials credential)
     {
         if (!(credential.Key is AsymmetricSecurityKey
-              || credential.Key is IdentityModel.Tokens.JsonWebKey && ((IdentityModel.Tokens.JsonWebKey)credential.Key).HasPrivateKey))
+              || credential.Key is Microsoft.IdentityModel.Tokens.JsonWebKey && ((Microsoft.IdentityModel.Tokens.JsonWebKey)credential.Key).HasPrivateKey))
         {
             throw new InvalidOperationException("Signing key is not asymmetric");
         }
@@ -44,7 +44,7 @@ public static class IdentityServerBuilderExtensionsCrypto
             throw new InvalidOperationException("Invalid curve for signing algorithm");
         }
 
-        if (credential.Key is IdentityModel.Tokens.JsonWebKey jsonWebKey)
+        if (credential.Key is Microsoft.IdentityModel.Tokens.JsonWebKey jsonWebKey)
         {
             if (jsonWebKey.Kty == JsonWebAlgorithmsKeyTypes.EllipticCurve && !CryptoHelper.IsValidCrvValueForAlgorithm(jsonWebKey.Crv))
                 throw new InvalidOperationException("Invalid crv value for signing algorithm");

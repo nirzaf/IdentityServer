@@ -8,7 +8,7 @@ using Duende.IdentityServer;
 using Duende.IdentityServer.Test;
 using IdentityModel;
 
-namespace IntegrationTests.Clients.Setup;
+namespace IdentityServer.IntegrationTests.Clients.Setup;
 
 internal static class Users
 {

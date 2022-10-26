@@ -2,11 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.EntityFramework.Mappers;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.Storage.Models;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Mappers;
+namespace EntityFramework.Storage.UnitTests.Mappers;
 
 public class PersistedGrantMappersTests
 {
@@ -19,7 +20,7 @@ public class PersistedGrantMappersTests
     [Fact]
     public void CanMap()
     {
-        var model = new Duende.IdentityServer.Models.PersistedGrant()
+        var model = new PersistedGrant()
         {
             ConsumedTime = new System.DateTime(2020, 02, 03, 4, 5, 6)
         };

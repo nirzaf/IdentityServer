@@ -4,7 +4,7 @@
 
 using Duende.IdentityServer.Extensions;
 
-namespace Duende.IdentityServer.ResponseHandling;
+namespace Duende.IdentityServer.ResponseHandling.Models;
 
 /// <summary>
 /// Indicates interaction outcome for user on authorization endpoint.

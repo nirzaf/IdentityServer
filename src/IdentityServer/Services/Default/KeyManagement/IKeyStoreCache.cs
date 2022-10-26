@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.Services.KeyManagement;
+namespace Duende.IdentityServer.Services.Default.KeyManagement;
 
 /// <summary>
 /// Interface to model caching keys loaded from key store.

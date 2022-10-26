@@ -6,16 +6,16 @@ using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Common;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Common;
+using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Validation;
+namespace IdentityServer.UnitTests.Validation;
 
 public class AccessTokenValidation
 {

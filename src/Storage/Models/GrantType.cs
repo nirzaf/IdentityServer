@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Storage.Models;
 
 public static class GrantType
 {

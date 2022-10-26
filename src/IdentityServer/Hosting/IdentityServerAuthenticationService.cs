@@ -12,6 +12,7 @@ using System;
 using IdentityModel;
 using System.Linq;
 using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.Services;
 
 namespace Duende.IdentityServer.Hosting;

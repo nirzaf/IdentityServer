@@ -2,12 +2,14 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Validation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace IntegrationTests.Clients.Setup;
+namespace IdentityServer.IntegrationTests.Clients.Setup;
 
 public class StartupWithCustomTokenResponses
 {

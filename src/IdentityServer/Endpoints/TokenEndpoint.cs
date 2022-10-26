@@ -15,6 +15,9 @@ using Duende.IdentityServer.ResponseHandling;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Validation;
 using System.IO;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.ResponseHandling.Models;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Endpoints;
 

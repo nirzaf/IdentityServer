@@ -4,7 +4,10 @@
 
 using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
+using Duende.IdentityServer.ResponseHandling.Models;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.ResponseHandling;
 

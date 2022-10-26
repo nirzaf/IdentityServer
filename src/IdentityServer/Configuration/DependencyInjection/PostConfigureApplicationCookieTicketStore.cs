@@ -1,17 +1,20 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
+using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Storage.Stores;
 using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Stores.InMemory;
+using Duende.IdentityServer.Validation.Default;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection;
 
 /// <summary>
 /// Cookie configuration for the user session plumbing

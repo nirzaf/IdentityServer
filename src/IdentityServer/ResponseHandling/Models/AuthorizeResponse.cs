@@ -2,12 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Validation;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Validation.Models;
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer.ResponseHandling;
+namespace Duende.IdentityServer.ResponseHandling.Models;
 
 public class AuthorizeResponse
 {

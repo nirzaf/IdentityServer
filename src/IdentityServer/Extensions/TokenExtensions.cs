@@ -12,6 +12,8 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text.Json;
 using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Storage.Models;
 
 namespace Duende.IdentityServer.Extensions;
 

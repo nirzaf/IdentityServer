@@ -2,14 +2,16 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Validates a request that uses a bearer token for authentication

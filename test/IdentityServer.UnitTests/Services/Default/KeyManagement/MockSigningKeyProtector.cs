@@ -1,10 +1,8 @@
-
-
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services.KeyManagement;
 using System;
+using Duende.IdentityServer.Services.Default.KeyManagement;
+using Duende.IdentityServer.Storage.Models;
 
-namespace UnitTests.Services.Default.KeyManagement;
+namespace IdentityServer.UnitTests.Services.Default.KeyManagement;
 
 class MockSigningKeyProtector : ISigningKeyProtector
 {

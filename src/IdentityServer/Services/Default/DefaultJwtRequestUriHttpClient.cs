@@ -4,14 +4,16 @@
 
 using System;
 using System.Collections.Generic;
-using Duende.IdentityServer.Models;
-using Microsoft.Extensions.Logging;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Services;
 using IdentityModel;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// Default JwtRequest client

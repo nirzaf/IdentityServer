@@ -5,7 +5,7 @@
 
 using System;
 
-namespace Duende.IdentityServer.EntityFramework.Entities;
+namespace Duende.IdentityServer.EntityFramework.Storage.Entities;
 
 /// <summary>
 /// Models storage for keys.

@@ -2,6 +2,8 @@
 // See LICENSE in the project root for license information.
 
 using Duende.IdentityServer;
+using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection;
 using IdentityServerHost.Pages.Admin.ApiScopes;
 using IdentityServerHost.Pages.Admin.Clients;
 using IdentityServerHost.Pages.Admin.IdentityScopes;

@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 using Duende.IdentityServer;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Validation.AuthorizeRequest_Validation;
+namespace IdentityServer.UnitTests.Validation.AuthorizeRequest_Validation;
 
 public class Authorize_ProtocolValidation_Valid
 {

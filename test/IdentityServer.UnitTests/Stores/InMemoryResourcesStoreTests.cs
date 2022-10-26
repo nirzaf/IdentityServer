@@ -4,12 +4,12 @@
 
 using System;
 using System.Collections.Generic;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
-using Xunit;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Stores.InMemory;
 using FluentAssertions;
+using Xunit;
 
-namespace UnitTests.Stores;
+namespace IdentityServer.UnitTests.Stores;
 
 public class InMemoryResourcesStoreTests
 {

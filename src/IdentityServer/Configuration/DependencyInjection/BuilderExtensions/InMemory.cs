@@ -2,16 +2,21 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Stores;
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using System.Collections.Generic;
 using System.Linq;
+using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Services.Default;
+using Duende.IdentityServer.Services.InMemory;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Services;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Stores.InMemory;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 
 /// <summary>
 /// Builder extension methods for registering in-memory services

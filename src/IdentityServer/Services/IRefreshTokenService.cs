@@ -4,7 +4,9 @@
 
 using Duende.IdentityServer.Models;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Services;
 

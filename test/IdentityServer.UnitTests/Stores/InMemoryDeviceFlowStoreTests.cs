@@ -6,12 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Stores.InMemory;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Stores;
+namespace IdentityServer.UnitTests.Stores;
 
 public class InMemoryDeviceFlowStoreTests
 {

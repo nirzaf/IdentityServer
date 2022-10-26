@@ -5,8 +5,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Extensions;
 
 internal static class ScopeExtensions
 {

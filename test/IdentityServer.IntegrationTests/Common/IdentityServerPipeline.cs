@@ -11,10 +11,13 @@ using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel.Client;
@@ -26,7 +29,7 @@ using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace IntegrationTests.Common;
+namespace IdentityServer.IntegrationTests.Common;
 
 public class IdentityServerPipeline
 {

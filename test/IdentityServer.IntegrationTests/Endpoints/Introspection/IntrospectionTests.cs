@@ -11,12 +11,13 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using FluentAssertions;
 using IdentityModel.Client;
-using IntegrationTests.Endpoints.Introspection.Setup;
+using IdentityServer.IntegrationTests.Common;
+using IdentityServer.IntegrationTests.Endpoints.Introspection.Setup;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Xunit;
 
-namespace IntegrationTests.Endpoints.Introspection;
+namespace IdentityServer.IntegrationTests.Endpoints.Introspection;
 
 public class IntrospectionTests
 {

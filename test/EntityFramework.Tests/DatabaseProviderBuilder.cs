@@ -5,7 +5,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Tests;
+namespace EntityFramework.Tests;
 
 /// <summary>
 /// Helper methods to initialize DbContextOptions for the specified database provider and context.

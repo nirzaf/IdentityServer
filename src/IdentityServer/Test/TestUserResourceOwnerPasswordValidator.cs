@@ -6,6 +6,8 @@ using IdentityModel;
 using System.Threading.Tasks;
 using System;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Contexts;
+using Duende.IdentityServer.Validation.Models;
 using Microsoft.AspNetCore.Authentication;
 
 namespace Duende.IdentityServer.Test;

@@ -2,13 +2,16 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Configuration;
+using System;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Hosting.DynamicProviders.Oidc;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using System;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Configuration.DependencyInjection;
 
 /// <summary>
 /// DI extension methods for adding IdentityServer

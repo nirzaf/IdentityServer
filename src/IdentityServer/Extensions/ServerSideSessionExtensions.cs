@@ -4,6 +4,7 @@
 
 using Duende.IdentityServer.Models;
 using System.Diagnostics;
+using Duende.IdentityServer.Storage.Models;
 
 namespace Duende.IdentityServer.Extensions;
 

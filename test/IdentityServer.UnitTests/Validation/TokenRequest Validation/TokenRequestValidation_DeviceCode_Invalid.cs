@@ -6,16 +6,16 @@ using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Common;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Common;
+using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Validation.TokenRequest_Validation;
+namespace IdentityServer.UnitTests.Validation.TokenRequest_Validation;
 
 public class TokenRequestValidation_DeviceCode_Invalid
 {

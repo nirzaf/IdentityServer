@@ -1,11 +1,12 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Validation;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Validation.Contexts;
+using Duende.IdentityServer.Validation.Default;
 
-namespace Duende.IdentityServer.Services.KeyManagement;
+namespace Duende.IdentityServer.Services.Default.KeyManagement;
 
 /// <summary>
 /// Client configuration validator that ensures access token lifetimes are compatible with the key management options.

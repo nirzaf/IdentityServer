@@ -5,14 +5,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Stores.Caching;
+using Duende.IdentityServer.Stores.InMemory;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.Stores.Default;
+namespace IdentityServer.UnitTests.Stores.Default;
 
 public class CachingResourceStoreTests
 {

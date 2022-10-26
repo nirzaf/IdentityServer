@@ -5,7 +5,7 @@
 using System.Threading.Tasks;
 using Duende.IdentityServer.Services;
 
-namespace UnitTests.Validation.Setup;
+namespace IdentityServer.UnitTests.Validation.Setup;
 
 internal class TestIssuerNameService : IIssuerNameService
 {

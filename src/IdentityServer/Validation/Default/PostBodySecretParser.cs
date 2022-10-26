@@ -2,16 +2,17 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
-using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
 using System.Linq;
-using Duende.IdentityServer.Configuration;
+using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.Models;
 using IdentityModel;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Parses a POST body for secrets

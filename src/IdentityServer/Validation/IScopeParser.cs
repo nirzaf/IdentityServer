@@ -3,6 +3,7 @@
 
 
 using System.Collections.Generic;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Validation;
 

@@ -5,10 +5,10 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Duende.IdentityServer.EntityFramework.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Duende.IdentityServer.EntityFramework.Interfaces;
+namespace Duende.IdentityServer.EntityFramework.Storage.Interfaces;
 
 /// <summary>
 /// Abstraction for the operational data context.

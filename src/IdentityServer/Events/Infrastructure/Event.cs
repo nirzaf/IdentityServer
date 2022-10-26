@@ -2,12 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
 using System;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Logging;
 
-namespace Duende.IdentityServer.Events;
+namespace Duende.IdentityServer.Events.Infrastructure;
 
 /// <summary>
 /// Models base class for events raised from IdentityServer.

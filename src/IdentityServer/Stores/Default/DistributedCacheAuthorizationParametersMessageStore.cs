@@ -4,7 +4,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Infrastructure;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
 using Duende.IdentityServer.Services;
 using IdentityModel;
 using Microsoft.Extensions.Caching.Distributed;

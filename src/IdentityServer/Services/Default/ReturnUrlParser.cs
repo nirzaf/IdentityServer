@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// Parses a return URL using all registered URL parsers

@@ -7,6 +7,8 @@ using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Contexts;
+using Duende.IdentityServer.Validation.Models;
 using static IdentityModel.OidcConstants;
 
 namespace Duende.IdentityServer.AspNetIdentity;

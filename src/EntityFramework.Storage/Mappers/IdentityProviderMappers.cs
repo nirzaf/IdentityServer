@@ -3,9 +3,9 @@
 
 
 using AutoMapper;
-using Duende.IdentityServer.EntityFramework.Entities;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.EntityFramework.Mappers;
+namespace Duende.IdentityServer.EntityFramework.Storage.Mappers;
 
 /// <summary>
 /// Extension methods to map to/from entity/model for identity providers.
@@ -25,9 +25,9 @@ public static class IdentityProviderMappers
     /// </summary>
     /// <param name="entity">The entity.</param>
     /// <returns></returns>
-    public static Models.IdentityProvider ToModel(this IdentityProvider entity)
+    public static IdentityProvider ToModel(this Entities.IdentityProvider entity)
     {
-        return entity == null ? null : Mapper.Map<Models.IdentityProvider>(entity);
+        return entity == null ? null : Mapper.Map<IdentityProvider>(entity);
     }
 
     /// <summary>
@@ -35,8 +35,8 @@ public static class IdentityProviderMappers
     /// </summary>
     /// <param name="model">The model.</param>
     /// <returns></returns>
-    public static Entities.IdentityProvider ToEntity(this Models.IdentityProvider model)
+    public static Entities.IdentityProvider ToEntity(this IdentityProvider model)
     {
-        return model == null ? null : Mapper.Map<IdentityProvider>(model);
+        return model == null ? null : Mapper.Map<Entities.IdentityProvider>(model);
     }
 }

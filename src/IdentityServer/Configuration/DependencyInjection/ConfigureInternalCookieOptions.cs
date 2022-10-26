@@ -2,12 +2,14 @@
 // See LICENSE in the project root for license information.
 
 
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection;
 
 internal class ConfigureInternalCookieOptions : IConfigureNamedOptions<CookieAuthenticationOptions>
 {

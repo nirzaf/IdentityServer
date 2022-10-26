@@ -6,14 +6,14 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Duende.IdentityServer.EntityFramework.Extensions;
-using Duende.IdentityServer.EntityFramework.Interfaces;
-using Duende.IdentityServer.EntityFramework.Options;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.EntityFramework.Storage.Extensions;
+using Duende.IdentityServer.EntityFramework.Storage.Interfaces;
+using Duende.IdentityServer.EntityFramework.Storage.Options;
+using Duende.IdentityServer.Storage.Stores;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.EntityFramework;
+namespace Duende.IdentityServer.EntityFramework.Storage.TokenCleanup;
 
 /// <summary>
 /// Helper to cleanup stale persisted grants and device codes.

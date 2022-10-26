@@ -2,10 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.EntityFramework.Mappers;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.Storage.Models;
 using Xunit;
 
-namespace UnitTests.Mappers;
+namespace EntityFramework.Storage.UnitTests.Mappers;
 
 public class IdentityResourcesMappersTests
 {
@@ -18,7 +19,7 @@ public class IdentityResourcesMappersTests
     [Fact]
     public void CanMapIdentityResources()
     {
-        var model = new Duende.IdentityServer.Models.IdentityResource();
+        var model = new IdentityResource();
         var mappedEntity = model.ToEntity();
         var mappedModel = mappedEntity.ToModel();
 

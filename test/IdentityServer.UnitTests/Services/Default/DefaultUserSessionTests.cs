@@ -8,15 +8,15 @@ using System.Net;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Services.Default;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Authentication;
 using Xunit;
 
-namespace UnitTests.Services.Default;
+namespace IdentityServer.UnitTests.Services.Default;
 
 public class DefaultUserSessionTests
 {

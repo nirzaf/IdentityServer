@@ -7,10 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 public class MockBackChannelAuthenticationRequestStore : IBackChannelAuthenticationRequestStore
 {

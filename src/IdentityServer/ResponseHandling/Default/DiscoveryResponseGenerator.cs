@@ -2,21 +2,23 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Stores;
-using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Stores;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Default;
+using IdentityModel;
+using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 
-namespace Duende.IdentityServer.ResponseHandling;
+namespace Duende.IdentityServer.ResponseHandling.Default;
 
 /// <summary>
 /// Default implementation of the discovery endpoint response generator
@@ -406,11 +408,11 @@ public class DiscoveryResponseGenerator : IDiscoveryResponseGenerator
     /// <summary>
     /// Creates the JWK document.
     /// </summary>
-    public virtual async Task<IEnumerable<Models.JsonWebKey>> CreateJwkDocumentAsync()
+    public virtual async Task<IEnumerable<IdentityServer.Models.JsonWebKey>> CreateJwkDocumentAsync()
     {
         using var activity = Tracing.BasicActivitySource.StartActivity("DiscoveryResponseGenerator.CreateJwkDocument");
         
-        var webKeys = new List<Models.JsonWebKey>();
+        var webKeys = new List<IdentityServer.Models.JsonWebKey>();
 
         foreach (var key in await Keys.GetValidationKeysAsync())
         {
@@ -425,7 +427,7 @@ public class DiscoveryResponseGenerator : IDiscoveryResponseGenerator
                     var exponent = Base64Url.Encode(parameters.Exponent);
                     var modulus = Base64Url.Encode(parameters.Modulus);
 
-                    var rsaJsonWebKey = new Models.JsonWebKey
+                    var rsaJsonWebKey = new IdentityServer.Models.JsonWebKey
                     {
                         kty = "RSA",
                         use = "sig",
@@ -444,7 +446,7 @@ public class DiscoveryResponseGenerator : IDiscoveryResponseGenerator
                     var x = Base64Url.Encode(parameters.Q.X);
                     var y = Base64Url.Encode(parameters.Q.Y);
 
-                    var ecdsaJsonWebKey = new Models.JsonWebKey
+                    var ecdsaJsonWebKey = new IdentityServer.Models.JsonWebKey
                     {
                         kty = "EC",
                         use = "sig",
@@ -469,7 +471,7 @@ public class DiscoveryResponseGenerator : IDiscoveryResponseGenerator
                 var exponent = Base64Url.Encode(parameters.Exponent);
                 var modulus = Base64Url.Encode(parameters.Modulus);
 
-                var webKey = new Models.JsonWebKey
+                var webKey = new IdentityServer.Models.JsonWebKey
                 {
                     kty = "RSA",
                     use = "sig",
@@ -487,7 +489,7 @@ public class DiscoveryResponseGenerator : IDiscoveryResponseGenerator
                 var x = Base64Url.Encode(parameters.Q.X);
                 var y = Base64Url.Encode(parameters.Q.Y);
 
-                var ecdsaJsonWebKey = new Models.JsonWebKey
+                var ecdsaJsonWebKey = new IdentityServer.Models.JsonWebKey
                 {
                     kty = "EC",
                     use = "sig",
@@ -501,7 +503,7 @@ public class DiscoveryResponseGenerator : IDiscoveryResponseGenerator
             }
             else if (key.Key is JsonWebKey jsonWebKey)
             {
-                var webKey = new Models.JsonWebKey
+                var webKey = new IdentityServer.Models.JsonWebKey
                 {
                     kty = jsonWebKey.Kty,
                     use = jsonWebKey.Use ?? "sig",

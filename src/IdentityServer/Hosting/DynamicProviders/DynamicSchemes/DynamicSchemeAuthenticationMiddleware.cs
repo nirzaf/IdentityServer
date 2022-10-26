@@ -1,13 +1,13 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Configuration;
+using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.Hosting.DynamicProviders;
+namespace Duende.IdentityServer.Hosting.DynamicProviders.DynamicSchemes;
 
 class DynamicSchemeAuthenticationMiddleware
 {

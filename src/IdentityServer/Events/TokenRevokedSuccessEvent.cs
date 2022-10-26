@@ -2,8 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
+using Duende.IdentityServer.Events.Infrastructure;
 using Duende.IdentityServer.Validation;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Events;
 

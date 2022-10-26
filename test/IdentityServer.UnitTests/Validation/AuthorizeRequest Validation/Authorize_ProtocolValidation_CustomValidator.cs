@@ -6,12 +6,15 @@ using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Contexts;
+using Duende.IdentityServer.Validation.Default;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Validation.AuthorizeRequest_Validation;
+namespace IdentityServer.UnitTests.Validation.AuthorizeRequest_Validation;
 
 public class Authorize_ProtocolValidation_CustomValidator
 {

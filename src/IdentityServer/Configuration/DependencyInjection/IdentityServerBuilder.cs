@@ -2,10 +2,10 @@
 // See LICENSE in the project root for license information.
 
 
-using Microsoft.Extensions.DependencyInjection;
 using System;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection;
 
 /// <summary>
 /// IdentityServer helper class for DI configuration

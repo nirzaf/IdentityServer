@@ -4,11 +4,12 @@
 
 using System.Threading.Tasks;
 using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores.Serialization;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Storage.Stores.Serialization;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.Default;
 
 /// <summary>
 /// Default user consent store.

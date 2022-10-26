@@ -5,12 +5,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Stores;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Duende.IdentityServer.Services.KeyManagement;
+namespace Duende.IdentityServer.Services.Default.KeyManagement;
 
 /// <summary>
 /// Store abstraction for automatic key management.

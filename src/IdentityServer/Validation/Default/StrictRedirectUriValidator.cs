@@ -2,14 +2,14 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Default implementation of redirect URI validator. Validates the URIs against

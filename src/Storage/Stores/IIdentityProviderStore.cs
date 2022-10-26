@@ -1,11 +1,11 @@
 // Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Storage.Stores;
 
 /// <summary>
 /// Interface to model storage of identity providers.

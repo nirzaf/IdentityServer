@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Duende.IdentityServer.Services;
 using Microsoft.AspNetCore.Authentication;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 public class MockUserSession : IUserSession
 {

@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Storage.Stores;
 
 /// <summary>
 /// Filter to query user sessions

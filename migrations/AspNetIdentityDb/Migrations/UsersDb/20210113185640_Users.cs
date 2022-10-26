@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace AspNetIdentity.Migrations.UsersDb;
+namespace AspNetIdentityDb.Migrations.UsersDb;
 
 public partial class Users : Migration
 {

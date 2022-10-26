@@ -2,13 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.EntityFramework.Storage;
+using Duende.IdentityServer.EntityFramework.Storage.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace SqlServer;
+namespace IdentityServerDb;
 
 public class Startup
 {
@@ -25,7 +25,7 @@ public class Startup
 
         services.AddOperationalDbContext(options => {
             options.ConfigureDbContext = b =>
-                b.UseSqlServer(cn, dbOpts => dbOpts.MigrationsAssembly(typeof(Startup).Assembly.FullName));
+                SqlServerDbContextOptionsExtensions.UseSqlServer(b, cn, dbOpts => dbOpts.MigrationsAssembly(typeof(Startup).Assembly.FullName));
         });
 
         services.AddConfigurationDbContext(options => {

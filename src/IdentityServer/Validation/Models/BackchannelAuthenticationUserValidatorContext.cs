@@ -1,11 +1,11 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Models;
 using System.Collections.Generic;
 using System.Security.Claims;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Context information for validating a user during backchannel authentication request.

@@ -2,10 +2,10 @@
 // See LICENSE in the project root for license information.
 
 
-using Microsoft.Extensions.Logging;
 using System;
+using Microsoft.Extensions.Logging;
 
-namespace IntegrationTests;
+namespace EntityFramework.Storage.IntegrationTests;
 
 public class FakeLogger<T> : FakeLogger, ILogger<T>
 {

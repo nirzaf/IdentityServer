@@ -1,16 +1,18 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Events;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Validation;
-using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Events;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Contexts;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Hosting.DynamicProviders;
+namespace Duende.IdentityServer.Hosting.DynamicProviders.Store;
 
 /// <summary>
 /// Validating decorator for IIdentityProviderStore

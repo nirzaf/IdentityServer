@@ -2,18 +2,21 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using UnitTests.Validation.Setup;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Stores.InMemory;
+using Duende.IdentityServer.Validation.Default;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityModel;
+using IdentityServer.UnitTests.Common;
+using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Validation;
+namespace IdentityServer.UnitTests.Validation;
 
 public class UserInfoRequestValidation
 {

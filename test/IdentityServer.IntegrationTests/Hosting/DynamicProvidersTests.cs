@@ -3,7 +3,6 @@
 
 using Duende.IdentityServer;
 using Duende.IdentityServer.Hosting.DynamicProviders;
-using Duende.IdentityServer.IntegrationTests.TestFramework;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
 using FluentAssertions;
@@ -17,6 +16,15 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Hosting.DynamicProviders.Oidc;
+using Duende.IdentityServer.Hosting.DynamicProviders.Store;
+using Duende.IdentityServer.Services.Default;
+using Duende.IdentityServer.Storage.Models;
+using IdentityServer.IntegrationTests.TestFramework;
 using Xunit;
 
 namespace IdentityServer.IntegrationTests.Hosting;

@@ -3,6 +3,7 @@
 
 
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;

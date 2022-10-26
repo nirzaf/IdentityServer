@@ -1,11 +1,11 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Models;
-using Microsoft.AspNetCore.Authentication;
 using System;
+using Duende.IdentityServer.Storage.Models;
+using Microsoft.AspNetCore.Authentication;
 
-namespace Duende.IdentityServer.Hosting.DynamicProviders;
+namespace Duende.IdentityServer.Hosting.DynamicProviders.DynamicSchemes;
 
 /// <summary>
 /// Models a dynamic authentication scheme and it's corresponding IdentityProvider data.

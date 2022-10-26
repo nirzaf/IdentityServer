@@ -1,19 +1,18 @@
-
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Internal;
-using Duende.IdentityServer.Services.KeyManagement;
+using Duende.IdentityServer.Infrastructure.ConcurrencyLock;
+using Duende.IdentityServer.Services.Default.KeyManagement;
 using FluentAssertions;
+using IdentityServer.UnitTests.Validation.Setup;
 using Microsoft.Extensions.Logging;
-using UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Services.Default.KeyManagement;
+namespace IdentityServer.UnitTests.Services.Default.KeyManagement;
 
 public class KeyManagerTests
 {

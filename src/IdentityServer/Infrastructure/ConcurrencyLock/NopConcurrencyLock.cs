@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.Internal;
+namespace Duende.IdentityServer.Infrastructure.ConcurrencyLock;
 
 /// <summary>
 /// Nop implementation.

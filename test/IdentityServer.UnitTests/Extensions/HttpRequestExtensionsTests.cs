@@ -7,7 +7,7 @@ using FluentAssertions;
 using Microsoft.AspNetCore.Http;
 using Xunit;
 
-namespace UnitTests.Extensions;
+namespace IdentityServer.UnitTests.Extensions;
 
 public class HttpRequestExtensionsTests
 {

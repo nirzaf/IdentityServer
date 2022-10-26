@@ -5,13 +5,14 @@
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Default;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Http;
 using Xunit;
 
-namespace UnitTests.Validation;
+namespace IdentityServer.UnitTests.Validation;
 
 public class BearerTokenUsageValidation
 {

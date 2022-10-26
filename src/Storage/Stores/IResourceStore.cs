@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Storage.Stores;
 
 /// <summary>
 /// Resource retrieval

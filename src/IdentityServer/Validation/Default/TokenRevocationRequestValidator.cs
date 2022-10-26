@@ -2,15 +2,17 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// The token revocation request validator

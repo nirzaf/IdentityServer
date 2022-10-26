@@ -5,6 +5,7 @@
 using System;
 using System.Security.Claims;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Models;
 

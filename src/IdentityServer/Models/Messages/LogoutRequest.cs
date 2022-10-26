@@ -2,14 +2,14 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Models.Messages;
 
 /// <summary>
 /// Models the validated singout context.

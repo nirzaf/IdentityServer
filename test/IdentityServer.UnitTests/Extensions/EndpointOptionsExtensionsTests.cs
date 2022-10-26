@@ -3,12 +3,12 @@
 
 
 using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Hosting;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Hosting;
 using Xunit;
 
-namespace UnitTests.Extensions;
+namespace IdentityServer.UnitTests.Extensions;
 
 public class EndpointOptionsExtensionsTests
 {

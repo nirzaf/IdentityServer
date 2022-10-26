@@ -3,14 +3,14 @@
 
 
 using System;
-using Duende.IdentityServer.EntityFramework.Entities;
-using Duende.IdentityServer.EntityFramework.Extensions;
-using Duende.IdentityServer.EntityFramework.Interfaces;
-using Duende.IdentityServer.EntityFramework.Options;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Extensions;
+using Duende.IdentityServer.EntityFramework.Storage.Interfaces;
+using Duende.IdentityServer.EntityFramework.Storage.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
-namespace Duende.IdentityServer.EntityFramework.DbContexts;
+namespace Duende.IdentityServer.EntityFramework.Storage.DbContexts;
 
 /// <summary>
 /// DbContext for the IdentityServer operational data.

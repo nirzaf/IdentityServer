@@ -3,14 +3,16 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Contexts;
+using Duende.IdentityServer.Validation.Default;
 using FluentAssertions;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Xunit;
 
-namespace UnitTests.Validation;
+namespace IdentityServer.UnitTests.Validation;
 
 public class IdentityProviderConfigurationValidation
 {

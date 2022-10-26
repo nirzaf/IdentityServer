@@ -6,6 +6,7 @@ using IdentityModel;
 using Duende.IdentityServer.Models;
 using System;
 using System.Collections.Generic;
+using Duende.IdentityServer.Storage.Models;
 
 namespace Duende.IdentityServer;
 

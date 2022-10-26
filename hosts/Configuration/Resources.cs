@@ -2,12 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
-using System.Collections.Generic;
-using IdentityModel;
 using Duende.IdentityServer;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
+using IdentityModel;
 
-namespace IdentityServerHost.Configuration;
+namespace IdentityServerHost;
 
 public class Resources
 {

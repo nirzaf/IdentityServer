@@ -6,11 +6,11 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using FluentAssertions;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Validation.Setup;
 using Microsoft.AspNetCore.Http;
 using Xunit;
 
-namespace UnitTests.Validation.Secrets;
+namespace IdentityServer.UnitTests.Validation.Secrets;
 
 public class ClientSecretValidation
 {

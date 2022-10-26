@@ -5,7 +5,7 @@
 using System;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Duende.IdentityServer.Services.KeyManagement;
+namespace Duende.IdentityServer.Services.Default.KeyManagement;
 
 /// <summary>
 /// Container class for key.

@@ -4,8 +4,9 @@
 
 using System.Collections.Generic;
 using AutoMapper;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
 
-namespace Duende.IdentityServer.EntityFramework.Mappers;
+namespace Duende.IdentityServer.EntityFramework.Storage.Mappers;
 
 /// <summary>
 /// Defines entity/model mapping for identity resources.
@@ -18,14 +19,14 @@ public class IdentityResourceMapperProfile : Profile
     /// </summary>
     public IdentityResourceMapperProfile()
     {
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.IdentityResourceProperty, KeyValuePair<string, string>>()
+        CreateMap<IdentityResourceProperty, KeyValuePair<string, string>>()
             .ReverseMap();
 
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.IdentityResource, Models.IdentityResource>(MemberList.Destination)
-            .ConstructUsing(src => new Models.IdentityResource())
+        CreateMap<IdentityResource, IdentityServer.Storage.Models.IdentityResource>(MemberList.Destination)
+            .ConstructUsing(src => new IdentityServer.Storage.Models.IdentityResource())
             .ReverseMap();
 
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.IdentityResourceClaim, string>()
+        CreateMap<IdentityResourceClaim, string>()
             .ConstructUsing(x => x.Type)
             .ReverseMap()
             .ForMember(dest => dest.Type, opt => opt.MapFrom(src => src));

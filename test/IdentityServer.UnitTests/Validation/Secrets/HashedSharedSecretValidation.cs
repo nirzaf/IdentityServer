@@ -4,15 +4,18 @@
 
 using System.Threading.Tasks;
 using Duende.IdentityServer;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Stores.InMemory;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Default;
 using FluentAssertions;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Validation.Setup;
 using Microsoft.Extensions.Logging;
 using Xunit;
 
-namespace UnitTests.Validation.Secrets;
+namespace IdentityServer.UnitTests.Validation.Secrets;
 
 public class HashedSharedSecretValidation
 {

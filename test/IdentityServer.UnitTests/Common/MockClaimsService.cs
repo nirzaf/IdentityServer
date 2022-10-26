@@ -7,9 +7,9 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 class MockClaimsService : IClaimsService
 {

@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Storage.Models;
 
 /// <summary>
 /// Query result for paged data

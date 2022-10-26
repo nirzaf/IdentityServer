@@ -1,15 +1,18 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Hosting.DynamicProviders;
-using Duende.IdentityServer.Models;
+using System.Collections.Generic;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Hosting.DynamicProviders.Store;
+using Duende.IdentityServer.Storage.Models;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
-using System.Collections.Generic;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Hosting.DynamicProviders.Oidc;
 
 /// <summary>
 /// Add extension methods for configuring OIDC dynamic providers.

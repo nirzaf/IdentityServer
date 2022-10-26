@@ -2,7 +2,9 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace Duende.IdentityServer.Configuration.DependencyInjection;
 
 /// <summary>
 /// IdentityServer builder Interface

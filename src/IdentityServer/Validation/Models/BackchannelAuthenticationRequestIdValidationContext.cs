@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Context for backchannel authentication request id validation.

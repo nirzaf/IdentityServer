@@ -2,16 +2,17 @@
 // See LICENSE in the project root for license information.
 
 
-using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Stores.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System;
+using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Storage.Stores.Serialization;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// Default persisted grant service

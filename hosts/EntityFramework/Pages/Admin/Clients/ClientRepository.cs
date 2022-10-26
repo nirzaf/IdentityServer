@@ -1,9 +1,13 @@
-using Duende.IdentityServer.EntityFramework.DbContexts;
-using Duende.IdentityServer.EntityFramework.Entities;
-using Duende.IdentityServer.EntityFramework.Mappers;
 using Duende.IdentityServer.Models;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using Duende.IdentityServer.EntityFramework.Storage.DbContexts;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using Client = Duende.IdentityServer.Storage.Models.Client;
+using Secret = Duende.IdentityServer.Storage.Models.Secret;
 
 namespace IdentityServerHost.Pages.Admin.Clients;
 
@@ -113,11 +117,11 @@ public class ClientRepository
 
     public async Task CreateAsync(CreateClientModel model)
     {
-        var client = new Duende.IdentityServer.Models.Client();
+        var client = new Client();
         client.ClientId = model.ClientId.Trim();
         client.ClientName = model.Name?.Trim();
 
-        client.ClientSecrets.Add(new Duende.IdentityServer.Models.Secret(model.Secret.Sha256()));
+        client.ClientSecrets.Add(new Secret(model.Secret.Sha256()));
         
         if (model.Flow == Flow.ClientCredentials)
         {

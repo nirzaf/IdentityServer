@@ -3,13 +3,13 @@
 
 
 using System.Collections.Generic;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Services.InMemory;
+using Duende.IdentityServer.Storage.Models;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.Services.InMemory;
+namespace IdentityServer.UnitTests.Services.InMemory;
 
 public class InMemoryCorsPolicyServiceTests
 {

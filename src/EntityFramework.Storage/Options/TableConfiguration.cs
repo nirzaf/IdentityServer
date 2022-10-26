@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Duende.IdentityServer.EntityFramework.Options;
+namespace Duende.IdentityServer.EntityFramework.Storage.Options;
 
 /// <summary>
 /// Class to control a table's name and schema.

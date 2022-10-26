@@ -2,12 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
+using System;
 using System.Collections.Generic;
 using System.Security.Claims;
-using System;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Models.Contexts;
 
 /// <summary>
 /// Class describing the profile data request

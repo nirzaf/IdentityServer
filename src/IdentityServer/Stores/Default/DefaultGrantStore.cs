@@ -2,19 +2,21 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores.Serialization;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Threading.Tasks;
-using Duende.IdentityServer.Services;
-using System.Text;
-using System.Security.Cryptography;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Storage.Stores.Serialization;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.Default;
 
 /// <summary>
 /// Base class for persisting grants using the IPersistedGrantStore.

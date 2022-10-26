@@ -5,18 +5,20 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.EntityFramework.DbContexts;
-using Duende.IdentityServer.EntityFramework.Mappers;
-using Duende.IdentityServer.EntityFramework.Options;
-using Duende.IdentityServer.EntityFramework.Stores;
+using Duende.IdentityServer.EntityFramework.Storage.DbContexts;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.EntityFramework.Storage.Options;
+using Duende.IdentityServer.EntityFramework.Storage.Stores;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Services;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 using Xunit.Sdk;
 
-namespace IntegrationTests.Stores;
+namespace EntityFramework.Storage.IntegrationTests.Stores;
 
 public class ClientStoreTests : IntegrationTest<ClientStoreTests, ConfigurationDbContext, ConfigurationStoreOptions>
 {

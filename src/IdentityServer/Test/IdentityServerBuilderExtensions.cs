@@ -2,10 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Test;
 using System.Collections.Generic;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Test;
 
 /// <summary>
 /// Extension methods for the IdentityServer builder

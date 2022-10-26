@@ -3,12 +3,13 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Validation;
 using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 using IdentityModel;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// Decorator on the refresh token service to coordinate refresh token lifetimes and server-side sessions.

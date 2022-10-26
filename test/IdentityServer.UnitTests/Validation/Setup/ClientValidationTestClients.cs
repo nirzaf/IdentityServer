@@ -6,10 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using Duende.IdentityServer;
-using Duende.IdentityServer.Models;
-using UnitTests.Common;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using IdentityServer.UnitTests.Common;
 
-namespace UnitTests.Validation.Setup;
+namespace IdentityServer.UnitTests.Validation.Setup;
 
 internal static class ClientValidationTestClients
 {

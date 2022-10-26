@@ -8,6 +8,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Endpoints.Results;
 using Duende.IdentityServer.Hosting;
+using Duende.IdentityServer.Logging;
 
 namespace Duende.IdentityServer.Endpoints;
 

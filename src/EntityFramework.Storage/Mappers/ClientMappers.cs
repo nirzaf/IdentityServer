@@ -3,8 +3,9 @@
 
 
 using AutoMapper;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.EntityFramework.Mappers;
+namespace Duende.IdentityServer.EntityFramework.Storage.Mappers;
 
 /// <summary>
 /// Extension methods to map to/from entity/model for clients.
@@ -24,9 +25,9 @@ public static class ClientMappers
     /// </summary>
     /// <param name="entity">The entity.</param>
     /// <returns></returns>
-    public static Models.Client ToModel(this Duende.IdentityServer.EntityFramework.Entities.Client entity)
+    public static Client ToModel(this Entities.Client entity)
     {
-        return Mapper.Map<Models.Client>(entity);
+        return Mapper.Map<Client>(entity);
     }
 
     /// <summary>
@@ -34,8 +35,8 @@ public static class ClientMappers
     /// </summary>
     /// <param name="model">The model.</param>
     /// <returns></returns>
-    public static Duende.IdentityServer.EntityFramework.Entities.Client ToEntity(this Models.Client model)
+    public static Entities.Client ToEntity(this Client model)
     {
-        return Mapper.Map<Duende.IdentityServer.EntityFramework.Entities.Client>(model);
+        return Mapper.Map<Entities.Client>(model);
     }
 }

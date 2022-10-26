@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Duende.IdentityServer.EntityFramework.Entities;
+namespace Duende.IdentityServer.EntityFramework.Storage.Entities;
 
 /// <summary>
 /// Entity for device flow codes

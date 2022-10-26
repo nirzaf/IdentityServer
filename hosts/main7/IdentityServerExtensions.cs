@@ -4,8 +4,8 @@
 using System.Security.Cryptography.X509Certificates;
 using Duende.IdentityServer;
 using IdentityModel;
-using IdentityServerHost.Configuration;
 using IdentityServerHost.Extensions;
+using IdentityServerHost.Pages;
 using Microsoft.IdentityModel.Tokens;
 
 namespace IdentityServerHost;

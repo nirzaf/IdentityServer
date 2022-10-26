@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 public class NetworkHandler : HttpMessageHandler
 {

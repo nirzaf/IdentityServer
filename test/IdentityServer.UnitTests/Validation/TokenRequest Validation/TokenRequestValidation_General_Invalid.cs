@@ -7,14 +7,16 @@ using System.Collections.Specialized;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Stores.InMemory;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Validation.TokenRequest_Validation;
+namespace IdentityServer.UnitTests.Validation.TokenRequest_Validation;
 
 public class TokenRequestValidation_General_Invalid
 {

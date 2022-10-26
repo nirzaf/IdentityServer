@@ -5,17 +5,19 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Stores.InMemory;
+using Duende.IdentityServer.Validation.Default;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Common;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Common;
+using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Validation.AuthorizeRequest_Validation;
+namespace IdentityServer.UnitTests.Validation.AuthorizeRequest_Validation;
 
 public class Authorize_ProtocolValidation_Resources
 {

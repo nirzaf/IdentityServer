@@ -3,6 +3,7 @@
 
 
 using System.Collections.Generic;
+using Duende.IdentityServer.Events.Infrastructure;
 
 namespace Duende.IdentityServer.Events;
 

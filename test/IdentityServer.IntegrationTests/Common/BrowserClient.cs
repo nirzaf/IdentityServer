@@ -4,7 +4,7 @@
 
 using System.Net.Http;
 
-namespace IntegrationTests.Common;
+namespace IdentityServer.IntegrationTests.Common;
 
 public class BrowserClient : HttpClient
 {

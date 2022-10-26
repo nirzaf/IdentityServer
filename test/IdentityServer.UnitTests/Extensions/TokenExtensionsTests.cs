@@ -2,18 +2,18 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
-using IdentityModel;
-using Microsoft.AspNetCore.Authentication;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text.Json;
-using UnitTests.Common;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using IdentityModel;
+using IdentityServer.UnitTests.Common;
+using Microsoft.AspNetCore.Authentication;
 using Xunit;
 
-namespace UnitTests.Extensions;
+namespace IdentityServer.UnitTests.Extensions;
 
 public class TokenExtensionsTests
 {

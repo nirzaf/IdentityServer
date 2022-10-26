@@ -3,17 +3,18 @@
 
 
 using System;
-using System.Threading.Tasks;
-using System.Linq;
 using System.IdentityModel.Tokens.Jwt;
-using Duende.IdentityServer.Configuration;
+using System.Linq;
+using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.Models;
 using IdentityModel;
-using Duende.IdentityServer.Extensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Parses a POST body for a JWT bearer client assertion

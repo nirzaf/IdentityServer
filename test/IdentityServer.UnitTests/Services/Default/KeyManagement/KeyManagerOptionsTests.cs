@@ -1,10 +1,9 @@
-
 using System;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Services.Default.KeyManagement;
+namespace IdentityServer.UnitTests.Services.Default.KeyManagement;
 
 public class KeyManagerOptionsTests
 {

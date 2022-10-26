@@ -5,7 +5,7 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace SqlServer;
+namespace IdentityServerDb;
 
 class Program
 {

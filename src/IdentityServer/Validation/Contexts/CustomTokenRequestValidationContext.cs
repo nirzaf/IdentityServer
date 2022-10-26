@@ -2,7 +2,9 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
+
+namespace Duende.IdentityServer.Validation.Contexts;
 
 /// <summary>
 /// Context class for custom token request validation

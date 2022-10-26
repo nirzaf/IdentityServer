@@ -2,22 +2,24 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Hosting;
-using Duende.IdentityServer.Hosting.DynamicProviders;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Validation;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Hosting;
+using Duende.IdentityServer.Hosting.DynamicProviders.DynamicSchemes;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Stores.InMemory;
+using Duende.IdentityServer.Validation.Default;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
-namespace Microsoft.AspNetCore.Builder;
+namespace Duende.IdentityServer.Configuration;
 
 /// <summary>
 /// Pipeline extension methods for adding IdentityServer

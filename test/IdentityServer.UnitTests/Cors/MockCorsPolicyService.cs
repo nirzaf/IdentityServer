@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Services;
 
-namespace UnitTests.Cors;
+namespace IdentityServer.UnitTests.Cors;
 
 public class MockCorsPolicyService : ICorsPolicyService
 {

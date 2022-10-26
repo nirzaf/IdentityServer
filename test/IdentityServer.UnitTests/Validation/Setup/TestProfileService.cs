@@ -3,10 +3,10 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Contexts;
 using Duende.IdentityServer.Services;
 
-namespace UnitTests.Validation.Setup;
+namespace IdentityServer.UnitTests.Validation.Setup;
 
 internal class TestProfileService : IProfileService
 {

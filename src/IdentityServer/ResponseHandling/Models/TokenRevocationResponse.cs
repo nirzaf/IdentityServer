@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Duende.IdentityServer.ResponseHandling;
+namespace Duende.IdentityServer.ResponseHandling.Models;
 
 /// <summary>
 /// Models a token revocation response

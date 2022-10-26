@@ -2,12 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
+using IdentityModel;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Models a validated request to the authorize endpoint.

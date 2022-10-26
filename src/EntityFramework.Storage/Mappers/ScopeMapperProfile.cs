@@ -4,8 +4,9 @@
 
 using System.Collections.Generic;
 using AutoMapper;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
 
-namespace Duende.IdentityServer.EntityFramework.Mappers;
+namespace Duende.IdentityServer.EntityFramework.Storage.Mappers;
 
 /// <summary>
 /// Defines entity/model mapping for scopes.
@@ -18,16 +19,16 @@ public class ScopeMapperProfile : Profile
     /// </summary>
     public ScopeMapperProfile()
     {
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.ApiScopeProperty, KeyValuePair<string, string>>()
+        CreateMap<ApiScopeProperty, KeyValuePair<string, string>>()
             .ReverseMap();
 
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.ApiScopeClaim, string>()
+        CreateMap<ApiScopeClaim, string>()
             .ConstructUsing(x => x.Type)
             .ReverseMap()
             .ForMember(dest => dest.Type, opt => opt.MapFrom(src => src));
 
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.ApiScope, Models.ApiScope>(MemberList.Destination)
-            .ConstructUsing(src => new Models.ApiScope())
+        CreateMap<ApiScope, IdentityServer.Storage.Models.ApiScope>(MemberList.Destination)
+            .ConstructUsing(src => new IdentityServer.Storage.Models.ApiScope())
             .ForMember(x => x.Properties, opts => opts.MapFrom(x => x.Properties))
             .ForMember(x => x.UserClaims, opts => opts.MapFrom(x => x.UserClaims))
             .ReverseMap();

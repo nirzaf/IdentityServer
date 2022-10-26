@@ -2,15 +2,16 @@
 // See LICENSE in the project root for license information.
 
 
-using Microsoft.Extensions.Hosting;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
-using System;
-using Duende.IdentityServer.EntityFramework;
-using Duende.IdentityServer.EntityFramework.Options;
+using Duende.IdentityServer.EntityFramework.Storage.Options;
+using Duende.IdentityServer.EntityFramework.Storage.TokenCleanup;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.EntityFramework;
 
 /// <summary>
 /// Helper to cleanup expired persisted grants.

@@ -6,20 +6,21 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Endpoints.Results;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.ResponseHandling;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Models.Messages;
+using Duende.IdentityServer.ResponseHandling.Models;
+using Duende.IdentityServer.Services.Default;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.WebUtilities;
 using Xunit;
-using Duende.IdentityServer.Services;
 
-namespace UnitTests.Endpoints.Results;
+namespace IdentityServer.UnitTests.Endpoints.Results;
 
 public class AuthorizeResultTests
 {
@@ -28,7 +29,7 @@ public class AuthorizeResultTests
     private AuthorizeResponse _response = new AuthorizeResponse();
     private IdentityServerOptions _options = new IdentityServerOptions();
     private MockUserSession _mockUserSession = new MockUserSession();
-    private MockMessageStore<Duende.IdentityServer.Models.ErrorMessage> _mockErrorMessageStore = new MockMessageStore<Duende.IdentityServer.Models.ErrorMessage>();
+    private MockMessageStore<ErrorMessage> _mockErrorMessageStore = new MockMessageStore<ErrorMessage>();
         
     private DefaultServerUrls _urls;
     private DefaultHttpContext _context = new DefaultHttpContext();

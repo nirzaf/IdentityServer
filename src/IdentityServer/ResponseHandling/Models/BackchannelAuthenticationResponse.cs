@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Duende.IdentityServer.ResponseHandling;
+namespace Duende.IdentityServer.ResponseHandling.Models;
 
 /// <summary>
 /// Models a backchannel authentication response

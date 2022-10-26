@@ -8,7 +8,7 @@ using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Duende.IdentityServer.Services.KeyManagement;
+namespace Duende.IdentityServer.Services.Default.KeyManagement;
 
 /// <summary>
 /// Container class for X509 keys.

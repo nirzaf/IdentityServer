@@ -4,13 +4,14 @@
 
 using System.Collections.Specialized;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Stores;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Validation.TokenRequest_Validation;
+namespace IdentityServer.UnitTests.Validation.TokenRequest_Validation;
 
 public class TokenRequestValidation_ExtensionGrants_Invalid
 {

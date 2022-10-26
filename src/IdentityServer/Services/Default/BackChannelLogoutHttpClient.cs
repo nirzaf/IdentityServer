@@ -6,9 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Storage.Services;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// Models making HTTP requests for back-channel logout notification.

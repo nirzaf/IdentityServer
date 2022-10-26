@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Storage.Stores;
 
 /// <summary>
 /// Represents a filter used when accessing the persisted grants store. 

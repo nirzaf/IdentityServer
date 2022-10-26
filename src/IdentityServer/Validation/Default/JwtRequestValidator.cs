@@ -7,16 +7,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
-using IdentityModel;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Contexts;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Validates JWT authorization request objects

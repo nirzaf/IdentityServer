@@ -4,6 +4,7 @@
 
 using System.Threading.Tasks;
 using Duende.IdentityServer.Events;
+using Duende.IdentityServer.Events.Infrastructure;
 
 namespace Duende.IdentityServer.Services;
 

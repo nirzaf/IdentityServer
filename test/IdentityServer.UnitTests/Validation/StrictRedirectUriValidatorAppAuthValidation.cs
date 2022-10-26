@@ -2,15 +2,15 @@
 // See LICENSE in the project root for license information.
 
 
-using UnitTests.Common;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Default;
 using FluentAssertions;
+using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.Validation;
+namespace IdentityServer.UnitTests.Validation;
 
 public class StrictRedirectUriValidatorAppAuthValidation
 {

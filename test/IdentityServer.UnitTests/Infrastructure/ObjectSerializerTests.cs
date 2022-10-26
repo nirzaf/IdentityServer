@@ -2,11 +2,12 @@
 // See LICENSE in the project root for license information.
 
 using System;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Infrastructure;
+using Duende.IdentityServer.Models.Messages;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Infrastructure;
+namespace IdentityServer.UnitTests.Infrastructure;
 
 public class ObjectSerializerTests
 {
@@ -17,7 +18,7 @@ public class ObjectSerializerTests
     [Fact]
     public void Can_be_deserialize_message()
     {
-        Action a = () => Duende.IdentityServer.ObjectSerializer.FromString<Message<ErrorMessage>>("{\"created\":0, \"data\": {\"error\": \"error\"}}");
+        Action a = () => ObjectSerializer.FromString<Message<ErrorMessage>>("{\"created\":0, \"data\": {\"error\": \"error\"}}");
         a.Should().NotThrow();
     }
 }

@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Models.Messages;
 
 /// <summary>
 /// Models the data for the error page.

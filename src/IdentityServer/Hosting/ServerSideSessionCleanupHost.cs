@@ -2,16 +2,17 @@
 // See LICENSE in the project root for license information.
 
 
-using Microsoft.Extensions.Hosting;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
-using System;
-using Microsoft.Extensions.Logging;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Stores;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Hosting;
 
 /// <summary>
 /// Helper to cleanup expired server side sessions.

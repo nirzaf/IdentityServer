@@ -4,9 +4,10 @@
 
 using System.Threading.Tasks;
 using Duende.IdentityServer.ResponseHandling;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.ResponseHandling.Models;
+using Duende.IdentityServer.Validation.Models;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 internal class StubAuthorizeResponseGenerator : IAuthorizeResponseGenerator
 {

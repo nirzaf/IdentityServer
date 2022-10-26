@@ -2,12 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Result of validation of requested scopes and resource indicators.

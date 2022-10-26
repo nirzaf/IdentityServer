@@ -3,12 +3,12 @@
 
 
 using System;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Services.Default;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.Services.Default;
+namespace IdentityServer.UnitTests.Services.Default;
 
 public class DefaultCorsPolicyServiceTests
 {

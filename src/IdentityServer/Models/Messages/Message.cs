@@ -2,10 +2,9 @@
 // See LICENSE in the project root for license information.
 
 
-
 using System;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Models.Messages;
 
 /// <summary>
 /// Base class for data that needs to be written out as cookies.

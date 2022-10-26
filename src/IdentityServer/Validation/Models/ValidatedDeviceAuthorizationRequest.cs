@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Models a validated request to the device authorization endpoint.

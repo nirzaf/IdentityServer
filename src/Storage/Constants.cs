@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Duende.IdentityServer;
+namespace Duende.IdentityServer.Storage;
 
 internal static class Constants
 {

@@ -6,19 +6,24 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Services.Default;
+using Duende.IdentityServer.Services.Default.KeyManagement;
+using Duende.IdentityServer.Storage.Services;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Storage.Stores.Serialization;
 using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Stores.Serialization;
+using Duende.IdentityServer.Stores.Default;
+using Duende.IdentityServer.Stores.InMemory;
 using Duende.IdentityServer.Validation;
-using UnitTests.Common;
+using Duende.IdentityServer.Validation.Default;
+using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
-using Duende.IdentityServer.Services.KeyManagement;
 
-namespace UnitTests.Validation.Setup;
+namespace IdentityServer.UnitTests.Validation.Setup;
 
 internal static class Factory
 {

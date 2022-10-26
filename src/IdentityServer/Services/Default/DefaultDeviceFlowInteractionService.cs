@@ -4,12 +4,15 @@
 
 using System;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
+using Duende.IdentityServer.Storage.Stores;
 using Duende.IdentityServer.Validation;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Validation.Models;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 internal class DefaultDeviceFlowInteractionService : IDeviceFlowInteractionService
 {

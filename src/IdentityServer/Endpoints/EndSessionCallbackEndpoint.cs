@@ -7,6 +7,7 @@ using Duende.IdentityServer.Endpoints.Results;
 using Duende.IdentityServer.Hosting;
 using Duende.IdentityServer.Validation;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 

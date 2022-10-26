@@ -5,7 +5,7 @@
 using System;
 using System.Security.Claims;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Represents the result of a backchannel authentication request.

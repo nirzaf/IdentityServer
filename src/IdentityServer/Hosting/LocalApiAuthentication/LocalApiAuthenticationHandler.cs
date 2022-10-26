@@ -10,7 +10,9 @@ using System;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
 
 namespace Duende.IdentityServer.Hosting.LocalApiAuthentication;
 

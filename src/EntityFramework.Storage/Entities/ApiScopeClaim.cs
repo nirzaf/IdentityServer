@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer.EntityFramework.Entities;
+namespace Duende.IdentityServer.EntityFramework.Storage.Entities;
 
 public class ApiScopeClaim : UserClaim
 {

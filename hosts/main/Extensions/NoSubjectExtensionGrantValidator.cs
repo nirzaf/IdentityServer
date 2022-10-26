@@ -4,6 +4,8 @@
 
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Contexts;
+using Duende.IdentityServer.Validation.Models;
 
 namespace IdentityServerHost.Extensions;
 

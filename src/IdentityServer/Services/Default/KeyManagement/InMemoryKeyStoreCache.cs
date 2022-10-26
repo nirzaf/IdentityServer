@@ -2,12 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using Microsoft.AspNetCore.Authentication;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 
-namespace Duende.IdentityServer.Services.KeyManagement;
+namespace Duende.IdentityServer.Services.Default.KeyManagement;
 
 /// <summary>
 /// In-memory implementation of ISigningKeyStoreCache based on static variables. This expects to be used as a singleton.

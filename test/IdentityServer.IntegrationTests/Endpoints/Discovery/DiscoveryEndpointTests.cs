@@ -3,21 +3,22 @@
 
 
 using System.Collections.Generic;
-using FluentAssertions;
-using IdentityModel.Client;
-using IntegrationTests.Common;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
 using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection;
 using Duende.IdentityServer.Models;
+using FluentAssertions;
+using IdentityModel.Client;
+using IdentityServer.IntegrationTests.Common;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using Xunit;
 using JsonWebKey = Microsoft.IdentityModel.Tokens.JsonWebKey;
 
-namespace IntegrationTests.Endpoints.Discovery;
+namespace IdentityServer.IntegrationTests.Endpoints.Discovery;
 
 public class DiscoveryEndpointTests
 {

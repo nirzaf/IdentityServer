@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Duende.IdentityServer.EntityFramework.Entities;
+namespace Duende.IdentityServer.EntityFramework.Storage.Entities;
 
 public class ServerSideSession
 {

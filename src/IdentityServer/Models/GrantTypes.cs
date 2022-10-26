@@ -4,6 +4,7 @@
 
 using IdentityModel;
 using System.Collections.Generic;
+using Duende.IdentityServer.Storage.Models;
 
 #pragma warning disable 1591
 

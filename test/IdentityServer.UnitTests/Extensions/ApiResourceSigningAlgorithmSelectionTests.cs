@@ -5,11 +5,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Extensions;
+namespace IdentityServer.UnitTests.Extensions;
 
 public class ApiResourceSigningAlgorithmSelectionTests
 {

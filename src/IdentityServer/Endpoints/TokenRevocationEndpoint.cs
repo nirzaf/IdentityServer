@@ -15,6 +15,7 @@ using Duende.IdentityServer.Validation;
 using Microsoft.AspNetCore.Http;
 using Duende.IdentityServer.Extensions;
 using System.IO;
+using Duende.IdentityServer.Logging;
 
 namespace Duende.IdentityServer.Endpoints;
 

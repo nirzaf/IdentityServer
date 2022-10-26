@@ -7,9 +7,11 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Security.Claims;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Models.Messages;
 
 /// <summary>
 /// Represents contextual information about a authorization request.

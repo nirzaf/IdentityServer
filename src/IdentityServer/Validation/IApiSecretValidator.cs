@@ -3,6 +3,7 @@
 
 
 using System.Threading.Tasks;
+using Duende.IdentityServer.Validation.Models;
 using Microsoft.AspNetCore.Http;
 
 namespace Duende.IdentityServer.Validation;

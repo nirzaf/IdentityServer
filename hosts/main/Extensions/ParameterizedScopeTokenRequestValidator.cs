@@ -4,6 +4,7 @@
 
 using System.Security.Claims;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Contexts;
 
 namespace IdentityServerHost.Extensions;
 

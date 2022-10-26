@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Storage.Models;
 
 /// <summary>
 /// Represents the permissions (in terms of scopes) granted to a client by a subject

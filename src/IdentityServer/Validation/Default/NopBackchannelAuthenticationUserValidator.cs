@@ -3,8 +3,9 @@
 
 
 using System.Threading.Tasks;
+using Duende.IdentityServer.Validation.Models;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 // todo: ciba perhaps make a default IBackchannelAuthenticationUserValidator based on the idtokenhint claims?
 // and maybe it calls into the profile service?
 

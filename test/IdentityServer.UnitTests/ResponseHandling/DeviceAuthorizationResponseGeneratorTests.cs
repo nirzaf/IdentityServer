@@ -6,19 +6,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Models;
-using Duende.IdentityServer.ResponseHandling;
+using Duende.IdentityServer.ResponseHandling.Default;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Services.Default;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Stores.InMemory;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Microsoft.Extensions.Logging.Abstractions;
 using Xunit;
 
-namespace UnitTests.ResponseHandling;
+namespace IdentityServer.UnitTests.ResponseHandling;
 
 public class DeviceAuthorizationResponseGeneratorTests
 {

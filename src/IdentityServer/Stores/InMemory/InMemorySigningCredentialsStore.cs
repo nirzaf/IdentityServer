@@ -2,10 +2,10 @@
 // See LICENSE in the project root for license information.
 
 
-using Microsoft.IdentityModel.Tokens;
 using System.Threading.Tasks;
+using Microsoft.IdentityModel.Tokens;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.InMemory;
 
 /// <summary>
 /// Default signing credentials store

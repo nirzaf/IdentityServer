@@ -2,10 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Models;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Extensions;
 
 /// <summary>
 /// Extension for IClientStore

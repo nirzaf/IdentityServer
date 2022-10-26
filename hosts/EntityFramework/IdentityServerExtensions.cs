@@ -1,7 +1,11 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.EntityFramework;
+using Duende.IdentityServer.Test;
 using IdentityModel;
+using IdentityServerHost.Pages;
 using Microsoft.EntityFrameworkCore;
 
 namespace IdentityServerHost;

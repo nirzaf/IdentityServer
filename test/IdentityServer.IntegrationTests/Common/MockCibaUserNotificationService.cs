@@ -2,11 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
+using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
-using System.Threading.Tasks;
 
-namespace IntegrationTests.Common;
+namespace IdentityServer.IntegrationTests.Common;
 
 internal class MockCibaUserNotificationService : IBackchannelAuthenticationUserNotificationService
 {

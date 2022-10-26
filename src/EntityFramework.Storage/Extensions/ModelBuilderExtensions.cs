@@ -2,12 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.EntityFramework.Entities;
-using Duende.IdentityServer.EntityFramework.Options;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Duende.IdentityServer.EntityFramework.Extensions;
+namespace Duende.IdentityServer.EntityFramework.Storage.Extensions;
 
 /// <summary>
 /// Extension methods to define the database schema for the configuration and operational data stores.

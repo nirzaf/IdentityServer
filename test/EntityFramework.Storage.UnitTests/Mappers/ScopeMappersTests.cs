@@ -3,11 +3,12 @@
 
 
 using System.Linq;
-using Duende.IdentityServer.EntityFramework.Mappers;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.Storage.Models;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Mappers;
+namespace EntityFramework.Storage.UnitTests.Mappers;
 
 public class ScopesMappersTests
 {
@@ -20,7 +21,7 @@ public class ScopesMappersTests
     [Fact]
     public void CanMapScope()
     {
-        var model = new Duende.IdentityServer.Models.ApiScope();
+        var model = new ApiScope();
         var mappedEntity = model.ToEntity();
         var mappedModel = mappedEntity.ToModel();
 
@@ -31,7 +32,7 @@ public class ScopesMappersTests
     [Fact]
     public void Properties_Map()
     {
-        var model = new Duende.IdentityServer.Models.ApiScope()
+        var model = new ApiScope()
         {
             Description = "description",
             DisplayName = "displayname",

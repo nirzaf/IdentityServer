@@ -12,6 +12,8 @@ using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Validation;
 using Duende.IdentityServer.Models;
 using System.Linq;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Validation.Default;
 
 namespace Duende.IdentityServer.Hosting;
 

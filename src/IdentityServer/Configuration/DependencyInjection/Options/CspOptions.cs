@@ -2,9 +2,9 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.Options;
 
 /// <summary>
 /// Options for Content Security Policy

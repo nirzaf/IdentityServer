@@ -8,7 +8,7 @@ using System.Linq;
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer.Extensions;
+namespace Duende.IdentityServer.Storage.Extensions;
 
 internal static class IEnumerableExtensions
 {

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Logging;
 
 namespace Duende.IdentityServer.Hosting.FederatedSignOut;
 

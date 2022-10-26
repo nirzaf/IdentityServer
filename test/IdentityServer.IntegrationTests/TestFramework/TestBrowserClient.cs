@@ -1,8 +1,6 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using CsQuery;
-using FluentAssertions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,8 +9,10 @@ using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using CsQuery;
+using FluentAssertions;
 
-namespace Duende.IdentityServer.IntegrationTests.TestFramework;
+namespace IdentityServer.IntegrationTests.TestFramework;
 
 public class TestBrowserClient : HttpClient
 {

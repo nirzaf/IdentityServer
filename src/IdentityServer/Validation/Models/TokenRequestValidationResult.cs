@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Validation result for token requests

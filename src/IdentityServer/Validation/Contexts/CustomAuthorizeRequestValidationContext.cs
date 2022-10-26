@@ -1,4 +1,6 @@
-﻿namespace Duende.IdentityServer.Validation;
+﻿using Duende.IdentityServer.Validation.Models;
+
+namespace Duende.IdentityServer.Validation.Contexts;
 
 /// <summary>
 /// Context for custom authorize request validation.

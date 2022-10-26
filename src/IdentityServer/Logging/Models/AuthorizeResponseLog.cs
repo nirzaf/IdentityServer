@@ -4,6 +4,7 @@
 
 using Duende.IdentityServer.ResponseHandling;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.ResponseHandling.Models;
 
 namespace Duende.IdentityServer.Logging.Models;
 

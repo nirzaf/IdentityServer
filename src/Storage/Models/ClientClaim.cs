@@ -5,7 +5,7 @@
 using System;
 using System.Security.Claims;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Storage.Models;
 
 /// <summary>
 /// A client claim

@@ -7,14 +7,16 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Logging;
-using IdentityModel;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Logging.Models;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 internal class DeviceAuthorizationRequestValidator : IDeviceAuthorizationRequestValidator
 {

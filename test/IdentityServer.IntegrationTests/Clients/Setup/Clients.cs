@@ -6,10 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using Duende.IdentityServer;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
-using IntegrationTests.Common;
+using Duende.IdentityServer.Storage.Models;
+using IdentityServer.IntegrationTests.Common;
 
-namespace IntegrationTests.Clients.Setup;
+namespace IdentityServer.IntegrationTests.Clients.Setup;
 
 internal class Clients
 {

@@ -2,12 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Microsoft.AspNetCore.DataProtection;
 using System;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Storage.Models;
+using Microsoft.AspNetCore.DataProtection;
 
-namespace Duende.IdentityServer.Services.KeyManagement;
+namespace Duende.IdentityServer.Services.Default.KeyManagement;
 
 /// <summary>
 /// Implementation of IKeyProtector based on ASP.NET Core's data protection feature.

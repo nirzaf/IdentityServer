@@ -6,29 +6,29 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Xunit;
 using static IdentityModel.OidcConstants;
 
-namespace UnitTests.ResponseHandling.AuthorizeInteractionResponseGenerator;
+namespace IdentityServer.UnitTests.ResponseHandling.AuthorizeInteractionResponseGenerator;
 
 public class AuthorizeInteractionResponseGeneratorTests
 {
     private IdentityServerOptions _options = new IdentityServerOptions();
-    private Duende.IdentityServer.ResponseHandling.AuthorizeInteractionResponseGenerator _subject;
+    private Duende.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator _subject;
     private MockConsentService _mockConsentService = new MockConsentService();
     private StubClock _clock = new StubClock();
 
     public AuthorizeInteractionResponseGeneratorTests()
     {
-        _subject = new Duende.IdentityServer.ResponseHandling.AuthorizeInteractionResponseGenerator(
+        _subject = new Duende.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator(
             _options,
             _clock,
-            TestLogger.Create<Duende.IdentityServer.ResponseHandling.AuthorizeInteractionResponseGenerator>(),
+            TestLogger.Create<Duende.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator>(),
             _mockConsentService,
             new MockProfileService());
     }

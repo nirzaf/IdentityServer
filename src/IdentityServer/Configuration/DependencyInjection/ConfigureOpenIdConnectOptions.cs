@@ -2,13 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
+using System;
+using System.Linq;
 using Duende.IdentityServer.Infrastructure;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Extensions.Options;
-using System;
-using System.Linq;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection;
 
 internal class ConfigureOpenIdConnectOptions : IPostConfigureOptions<OpenIdConnectOptions>
 {

@@ -3,9 +3,9 @@
 
 
 using AutoMapper;
-using Duende.IdentityServer.EntityFramework.Entities;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.EntityFramework.Mappers;
+namespace Duende.IdentityServer.EntityFramework.Storage.Mappers;
 
 /// <summary>
 /// Extension methods to map to/from entity/model for API resources.
@@ -25,9 +25,9 @@ public static class ApiResourceMappers
     /// </summary>
     /// <param name="entity">The entity.</param>
     /// <returns></returns>
-    public static Models.ApiResource ToModel(this ApiResource entity)
+    public static ApiResource ToModel(this Entities.ApiResource entity)
     {
-        return entity == null ? null : Mapper.Map<Models.ApiResource>(entity);
+        return entity == null ? null : Mapper.Map<ApiResource>(entity);
     }
 
     /// <summary>
@@ -35,8 +35,8 @@ public static class ApiResourceMappers
     /// </summary>
     /// <param name="model">The model.</param>
     /// <returns></returns>
-    public static ApiResource ToEntity(this Models.ApiResource model)
+    public static Entities.ApiResource ToEntity(this ApiResource model)
     {
-        return model == null ? null : Mapper.Map<ApiResource>(model);
+        return model == null ? null : Mapper.Map<Entities.ApiResource>(model);
     }
 }

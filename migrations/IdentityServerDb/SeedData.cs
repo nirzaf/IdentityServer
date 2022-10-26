@@ -4,14 +4,13 @@
 
 using System;
 using System.Linq;
-using Duende.IdentityServer.EntityFramework.DbContexts;
-using Duende.IdentityServer.EntityFramework.Mappers;
-using Duende.IdentityServer.Models;
-using IdentityServerHost.Configuration;
+using Duende.IdentityServer.EntityFramework.Storage.DbContexts;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.Storage.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace SqlServer;
+namespace IdentityServerDb;
 
 public class SeedData
 {
@@ -52,7 +51,7 @@ public class SeedData
         if (!context.IdentityResources.Any())
         {
             Console.WriteLine("IdentityResources being populated");
-            foreach (var resource in IdentityServerHost.Configuration.Resources.IdentityResources)
+            foreach (var resource in Resources.IdentityResources)
             {
                 context.IdentityResources.Add(resource.ToEntity());
             }
@@ -66,7 +65,7 @@ public class SeedData
         if (!context.ApiResources.Any())
         {
             Console.WriteLine("ApiResources being populated");
-            foreach (var resource in IdentityServerHost.Configuration.Resources.ApiResources)
+            foreach (var resource in Resources.ApiResources)
             {
                 context.ApiResources.Add(resource.ToEntity());
             }
@@ -80,7 +79,7 @@ public class SeedData
         if (!context.ApiScopes.Any())
         {
             Console.WriteLine("Scopes being populated");
-            foreach (var resource in IdentityServerHost.Configuration.Resources.ApiScopes)
+            foreach (var resource in Resources.ApiScopes)
             {
                 context.ApiScopes.Add(resource.ToEntity());
             }

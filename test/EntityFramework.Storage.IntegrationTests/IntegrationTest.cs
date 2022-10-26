@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Xunit;
 
-namespace IntegrationTests;
+namespace EntityFramework.Storage.IntegrationTests;
 
 /// <summary>
 /// Base class for integration tests, responsible for initializing test database providers & an xUnit class fixture

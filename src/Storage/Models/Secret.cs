@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Storage.Models;
 
 /// <summary>
 /// Models a client secret with identifier and expiration

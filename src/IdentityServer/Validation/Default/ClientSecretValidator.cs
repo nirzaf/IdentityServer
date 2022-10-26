@@ -4,13 +4,15 @@
 
 using System.Threading.Tasks;
 using Duende.IdentityServer.Events;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.Services;
-using Microsoft.Extensions.Logging;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Validation.Models;
 using Microsoft.AspNetCore.Http;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Models;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Validates a client secret using the registered secret validators and parsers

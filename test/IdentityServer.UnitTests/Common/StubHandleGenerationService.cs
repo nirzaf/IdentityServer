@@ -4,8 +4,9 @@
 
 using System.Threading.Tasks;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Services.Default;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 public class StubHandleGenerationService : DefaultHandleGenerationService, IHandleGenerationService
 {

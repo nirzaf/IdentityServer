@@ -11,9 +11,12 @@ using System;
 using Microsoft.AspNetCore.Authentication;
 using System.Text.Encodings.Web;
 using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Hosting;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
 using Duende.IdentityServer.ResponseHandling;
+using Duende.IdentityServer.ResponseHandling.Models;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Stores;
 

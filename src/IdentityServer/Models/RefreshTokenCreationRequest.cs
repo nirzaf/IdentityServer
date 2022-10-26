@@ -4,6 +4,7 @@
 
 using System.Collections.Generic;
 using System.Security.Claims;
+using Duende.IdentityServer.Storage.Models;
 
 namespace Duende.IdentityServer.Models;
 

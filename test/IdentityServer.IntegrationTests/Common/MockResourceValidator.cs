@@ -6,8 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
 
-namespace IntegrationTests.Common;
+namespace IdentityServer.IntegrationTests.Common;
 
 class MockResourceValidator : IResourceValidator
 {

@@ -2,13 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
-using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Duende.IdentityServer.Extensions;
+using Microsoft.AspNetCore.Http;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.Options;
 
 /// <summary>
 /// Options for CORS

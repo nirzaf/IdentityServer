@@ -14,14 +14,15 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel;
-using IntegrationTests.Common;
+using IdentityServer.IntegrationTests.Common;
 using Microsoft.AspNetCore.WebUtilities;
 using Xunit;
 
-namespace IntegrationTests.Endpoints.EndSession;
+namespace IdentityServer.IntegrationTests.Endpoints.EndSession;
 
 public class EndSessionTests
 {

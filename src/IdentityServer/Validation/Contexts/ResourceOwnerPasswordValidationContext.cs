@@ -3,8 +3,9 @@
 
 
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Validation.Models;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Contexts;
 
 /// <summary>
 /// Class describing the resource owner password validation context

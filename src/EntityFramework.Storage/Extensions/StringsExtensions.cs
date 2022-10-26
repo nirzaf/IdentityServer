@@ -8,7 +8,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text.Encodings.Web;
 
-namespace Duende.IdentityServer.EntityFramework.Extensions;
+namespace Duende.IdentityServer.EntityFramework.Storage.Extensions;
 
 internal static class StringExtensions
 {

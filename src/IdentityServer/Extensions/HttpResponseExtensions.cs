@@ -11,6 +11,9 @@ using Duende.IdentityServer.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Duende.IdentityServer.Services;
 using System;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Infrastructure;
+using Duende.IdentityServer.Storage.Models;
 
 #pragma warning disable 1591
 

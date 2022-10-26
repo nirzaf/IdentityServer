@@ -4,13 +4,13 @@
 
 using System;
 using System.Diagnostics;
-using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Events.Infrastructure;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
 
-namespace Duende.IdentityServer.Events;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// The default event service

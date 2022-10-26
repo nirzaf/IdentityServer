@@ -3,13 +3,14 @@
 
 
 using System;
-using Duende.IdentityServer.EntityFramework.DbContexts;
-using Duende.IdentityServer.EntityFramework.Interfaces;
-using Duende.IdentityServer.EntityFramework.Options;
+using Duende.IdentityServer.EntityFramework.Storage.DbContexts;
+using Duende.IdentityServer.EntityFramework.Storage.Interfaces;
+using Duende.IdentityServer.EntityFramework.Storage.Options;
+using Duende.IdentityServer.EntityFramework.Storage.TokenCleanup;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Duende.IdentityServer.EntityFramework.Storage;
+namespace Duende.IdentityServer.EntityFramework.Storage.Configuration;
 
 /// <summary>
 /// Extension methods to add EF database support to IdentityServer.

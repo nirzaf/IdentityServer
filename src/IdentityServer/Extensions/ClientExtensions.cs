@@ -2,14 +2,15 @@
 // See LICENSE in the project root for license information.
 
 
-using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Storage.Models;
+using Microsoft.IdentityModel.Tokens;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Extensions;
 
 /// <summary>
 /// Extension methods for client.

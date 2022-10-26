@@ -7,15 +7,17 @@ using System.Collections.Specialized;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Models.Contexts;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Default;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.Validation.EndSessionRequestValidation;
+namespace IdentityServer.UnitTests.Validation.EndSessionRequestValidation;
 
 public class EndSessionRequestValidatorTests
 {

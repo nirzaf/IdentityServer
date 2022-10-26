@@ -2,6 +2,8 @@
 // See LICENSE in the project root for license information.
 
 
+using Duende.IdentityServer.Events.Infrastructure;
+
 namespace Duende.IdentityServer.Events;
 
 /// <summary>

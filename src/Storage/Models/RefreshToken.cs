@@ -2,12 +2,12 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
 using System;
 using System.Collections.Generic;
 using System.Security.Claims;
+using IdentityModel;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Storage.Models;
 
 /// <summary>
 /// Models a refresh token.

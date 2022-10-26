@@ -3,6 +3,7 @@
 
 
 using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Hosting;
 
 namespace Duende.IdentityServer.Extensions;

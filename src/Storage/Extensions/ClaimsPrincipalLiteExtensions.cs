@@ -1,12 +1,12 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Stores.Serialization;
-using IdentityModel;
 using System.Linq;
 using System.Security.Claims;
+using Duende.IdentityServer.Storage.Stores.Serialization;
+using IdentityModel;
 
-namespace Duende.IdentityServer.Extensions;
+namespace Duende.IdentityServer.Storage.Extensions;
 
 /// <summary>
 ///  Extension methods for ClaimsPrincipalLite

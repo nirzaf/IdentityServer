@@ -4,26 +4,27 @@
 
 using System.Threading.Tasks;
 using Duende.IdentityServer;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.ResponseHandling;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Models.Messages;
+using Duende.IdentityServer.ResponseHandling.Models;
 using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 using Xunit;
 using static IdentityModel.OidcConstants;
 
-namespace UnitTests.ResponseHandling.AuthorizeInteractionResponseGenerator;
+namespace IdentityServer.UnitTests.ResponseHandling.AuthorizeInteractionResponseGenerator;
 
-public class CustomAuthorizeInteractionResponseGenerator : Duende.IdentityServer.ResponseHandling.AuthorizeInteractionResponseGenerator
+public class CustomAuthorizeInteractionResponseGenerator : Duende.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator
 {
     public CustomAuthorizeInteractionResponseGenerator(
         IdentityServerOptions options,
         ISystemClock clock, 
-        ILogger<Duende.IdentityServer.ResponseHandling.AuthorizeInteractionResponseGenerator> logger, 
+        ILogger<Duende.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator> logger, 
         IConsentService consent, 
         IProfileService profile) : base(options, clock, logger, consent, profile)
     {
@@ -63,7 +64,7 @@ public class AuthorizeInteractionResponseGeneratorTests_Custom
         _subject = new CustomAuthorizeInteractionResponseGenerator(
             _options,
             _clock,
-            TestLogger.Create<Duende.IdentityServer.ResponseHandling.AuthorizeInteractionResponseGenerator>(),
+            TestLogger.Create<Duende.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator>(),
             _mockConsentService,
             new MockProfileService());
     }

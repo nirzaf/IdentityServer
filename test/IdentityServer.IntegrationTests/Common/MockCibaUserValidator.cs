@@ -2,10 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Validation;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
 
-namespace IntegrationTests.Common;
+namespace IdentityServer.IntegrationTests.Common;
 
 internal class MockCibaUserValidator : IBackchannelAuthenticationUserValidator
 {

@@ -3,9 +3,14 @@
 
 using System.Security.Cryptography.X509Certificates;
 using Duende.IdentityServer;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Duende.IdentityServer.Hosting.DynamicProviders.Oidc;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Test;
 using IdentityModel;
-using IdentityServerHost.Configuration;
 using IdentityServerHost.Extensions;
+using IdentityServerHost.Pages;
 using Microsoft.IdentityModel.Tokens;
 
 namespace IdentityServerHost;
@@ -43,7 +48,7 @@ internal static class IdentityServerExtensions
             .AddMutualTlsSecretValidators()
             .AddInMemoryOidcProviders(new[]
             {
-                new Duende.IdentityServer.Models.OidcProvider
+                new OidcProvider
                 {
                     Scheme = "dynamicprovider-idsvr",
                     DisplayName = "IdentityServer (via Dynamic Providers)",

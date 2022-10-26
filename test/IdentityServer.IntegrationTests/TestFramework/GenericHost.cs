@@ -1,6 +1,12 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
+using System;
+using System.Linq;
+using System.Net.Http;
+using System.Reflection;
+using System.Security.Claims;
+using System.Threading.Tasks;
 using FluentAssertions;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
@@ -9,14 +15,8 @@ using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Linq;
-using System.Net.Http;
-using System.Reflection;
-using System.Security.Claims;
-using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.IntegrationTests.TestFramework;
+namespace IdentityServer.IntegrationTests.TestFramework;
 
 public class GenericHost
 {

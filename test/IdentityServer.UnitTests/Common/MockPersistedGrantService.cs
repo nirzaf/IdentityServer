@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 public class MockPersistedGrantService : IPersistedGrantService
 {

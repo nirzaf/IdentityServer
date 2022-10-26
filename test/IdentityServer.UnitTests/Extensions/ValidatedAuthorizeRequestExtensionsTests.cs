@@ -2,10 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Validation.Models;
 using Xunit;
 
-namespace UnitTests.Extensions;
+namespace IdentityServer.UnitTests.Extensions;
 
 public class ValidatedAuthorizeRequestExtensionsTests
 {

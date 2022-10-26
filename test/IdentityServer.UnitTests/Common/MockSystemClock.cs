@@ -2,10 +2,10 @@
 // See LICENSE in the project root for license information.
 
 
-using Microsoft.AspNetCore.Authentication;
 using System;
+using Microsoft.AspNetCore.Authentication;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 class MockSystemClock : ISystemClock
 {

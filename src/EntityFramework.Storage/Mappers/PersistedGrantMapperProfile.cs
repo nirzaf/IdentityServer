@@ -3,8 +3,9 @@
 
 
 using AutoMapper;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
 
-namespace Duende.IdentityServer.EntityFramework.Mappers;
+namespace Duende.IdentityServer.EntityFramework.Storage.Mappers;
 
 /// <summary>
 /// Defines entity/model mapping for persisted grants.
@@ -18,7 +19,7 @@ public class PersistedGrantMapperProfile:Profile
     /// </summary>
     public PersistedGrantMapperProfile()
     {
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.PersistedGrant, Models.PersistedGrant>(MemberList.Destination)
+        CreateMap<PersistedGrant, IdentityServer.Storage.Models.PersistedGrant>(MemberList.Destination)
             .ReverseMap();
     }
 }

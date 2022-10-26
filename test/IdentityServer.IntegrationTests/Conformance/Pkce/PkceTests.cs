@@ -8,15 +8,17 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel;
 using IdentityModel.Client;
-using IntegrationTests.Common;
+using IdentityServer.IntegrationTests.Common;
 using Xunit;
 
-namespace IntegrationTests.Conformance.Pkce;
+namespace IdentityServer.IntegrationTests.Conformance.Pkce;
 
 public class PkceTests
 {

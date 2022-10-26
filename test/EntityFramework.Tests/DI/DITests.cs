@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 using Xunit;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.EntityFramework;
 
 namespace EntityFramework.Tests.DI
 {

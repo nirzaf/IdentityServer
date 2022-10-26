@@ -4,16 +4,18 @@
 
 using System.Collections.Specialized;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Validation.Default;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Common;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Common;
+using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Validation.TokenRequest_Validation;
+namespace IdentityServer.UnitTests.Validation.TokenRequest_Validation;
 
 public class TokenRequestValidation_ResourceOwner_Invalid
 {

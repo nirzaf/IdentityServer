@@ -13,6 +13,9 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Storage.Services;
 
 namespace Duende.IdentityServer.Hosting;
 

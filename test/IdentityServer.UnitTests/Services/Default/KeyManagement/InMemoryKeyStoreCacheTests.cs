@@ -1,11 +1,10 @@
-
 using System;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Services.KeyManagement;
+using Duende.IdentityServer.Services.Default.KeyManagement;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Services.Default.KeyManagement;
+namespace IdentityServer.UnitTests.Services.Default.KeyManagement;
 
 public class InMemoryKeyStoreCacheTests
 {

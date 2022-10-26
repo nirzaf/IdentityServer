@@ -2,15 +2,16 @@
 // See LICENSE in the project root for license information.
 
 
-using System.Threading.Tasks;
-using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores.Serialization;
-using Microsoft.Extensions.Logging;
-using Duende.IdentityServer.Extensions;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Storage.Stores.Serialization;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.Default;
 
 /// <summary>
 /// Default authorization code store.

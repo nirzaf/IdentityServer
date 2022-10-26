@@ -3,11 +3,13 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Validation;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.ResponseHandling.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Validation.Models;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.ResponseHandling;
+namespace Duende.IdentityServer.ResponseHandling.Default;
 
 /// <summary>
 /// Default revocation response generator

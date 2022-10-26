@@ -3,6 +3,7 @@
 
 
 using System;
+using Duende.IdentityServer.Events.Infrastructure;
 
 namespace Duende.IdentityServer.Events;
 

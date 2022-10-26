@@ -8,15 +8,15 @@ using System.Security.Claims;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Duende.IdentityServer;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.ResponseHandling;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.ResponseHandling.Default;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Stores.InMemory;
+using Duende.IdentityServer.Validation.Models;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.ResponseHandling;
+namespace IdentityServer.UnitTests.ResponseHandling;
 
 public class UserInfoResponseGeneratorTests
 {

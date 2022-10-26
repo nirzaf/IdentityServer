@@ -4,7 +4,7 @@
 
 using System.Threading;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Storage.Services;
 
 /// <summary>
 /// Service to provide CancellationToken for async operations.

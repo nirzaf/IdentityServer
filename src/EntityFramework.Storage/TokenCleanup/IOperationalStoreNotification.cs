@@ -5,9 +5,9 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Duende.IdentityServer.EntityFramework.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
 
-namespace Duende.IdentityServer.EntityFramework;
+namespace Duende.IdentityServer.EntityFramework.Storage.TokenCleanup;
 
 /// <summary>
 /// Interface to model notifications from the TokenCleanup feature.

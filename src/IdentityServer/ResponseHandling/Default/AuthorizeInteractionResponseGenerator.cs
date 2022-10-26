@@ -2,19 +2,22 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Models.Contexts;
+using Duende.IdentityServer.Models.Messages;
+using Duende.IdentityServer.ResponseHandling.Models;
 using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
-using Duende.IdentityServer.Configuration;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.ResponseHandling;
+namespace Duende.IdentityServer.ResponseHandling.Default;
 
 /// <summary>
 /// Default logic for determining if user must login or consent when making requests to the authorization endpoint.

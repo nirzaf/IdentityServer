@@ -3,10 +3,10 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Validation;
 
-namespace UnitTests.Validation.EndSessionRequestValidation;
+namespace IdentityServer.UnitTests.Validation.EndSessionRequestValidation;
 
 public class StubRedirectUriValidator : IRedirectUriValidator
 {

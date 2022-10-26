@@ -5,7 +5,7 @@
 using Duende.IdentityServer.Endpoints;
 using Microsoft.Extensions.Logging;
 
-namespace UnitTests.Endpoints.EndSession;
+namespace IdentityServer.UnitTests.Endpoints.EndSession;
 
 public class EndSessionCallbackEndpointTests
 {

@@ -3,8 +3,9 @@
 
 
 using System.Threading.Tasks;
+using Duende.IdentityServer.Validation.Contexts;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Default custom request validator

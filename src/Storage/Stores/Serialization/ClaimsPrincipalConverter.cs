@@ -2,15 +2,15 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
 using System;
 using System.Security.Claims;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Duende.IdentityServer.Storage.Extensions;
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer.Stores.Serialization;
+namespace Duende.IdentityServer.Storage.Stores.Serialization;
 
 public class ClaimsPrincipalConverter : JsonConverter<ClaimsPrincipal>
 {

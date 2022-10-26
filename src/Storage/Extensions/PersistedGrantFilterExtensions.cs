@@ -3,9 +3,9 @@
 
 
 using System;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Storage.Stores;
 
-namespace Duende.IdentityServer.Extensions;
+namespace Duende.IdentityServer.Storage.Extensions;
 
 /// <summary>
 /// Extensions for PersistedGrantFilter.

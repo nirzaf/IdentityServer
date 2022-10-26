@@ -4,7 +4,7 @@
 
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer;
+namespace Duende.IdentityServer.Logging;
 
 internal static class ILoggerDevExtensions
 {

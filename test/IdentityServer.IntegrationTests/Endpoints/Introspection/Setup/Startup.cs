@@ -2,11 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace IntegrationTests.Endpoints.Introspection.Setup;
+namespace IdentityServer.IntegrationTests.Endpoints.Introspection.Setup;
 
 public class Startup
 {

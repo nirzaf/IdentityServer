@@ -6,6 +6,7 @@ using Duende.IdentityServer.Configuration;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.IdentityModel.Tokens;
 using System;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 
 namespace Duende.IdentityServer.Extensions;
 

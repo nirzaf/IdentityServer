@@ -3,11 +3,11 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Contexts;
 using Duende.IdentityServer.Test;
 using Microsoft.Extensions.Logging;
 
-namespace IntegrationTests.Clients.Setup;
+namespace IdentityServer.IntegrationTests.Clients.Setup;
 
 class CustomProfileService : TestUserProfileService
 {

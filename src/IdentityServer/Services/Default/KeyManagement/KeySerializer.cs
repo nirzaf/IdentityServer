@@ -3,7 +3,7 @@
 
 using System.Text.Json;
 
-namespace Duende.IdentityServer.Services.KeyManagement;
+namespace Duende.IdentityServer.Services.Default.KeyManagement;
 
 internal static class KeySerializer
 {

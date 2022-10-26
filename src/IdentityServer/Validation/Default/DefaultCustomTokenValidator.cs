@@ -2,12 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Stores;
-using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Validation.Models;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Default custom token validator

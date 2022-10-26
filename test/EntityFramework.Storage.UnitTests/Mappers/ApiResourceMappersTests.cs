@@ -3,12 +3,14 @@
 
 
 using System.Linq;
-using Duende.IdentityServer.EntityFramework.Mappers;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
 using FluentAssertions;
 using Xunit;
-using ApiResource = Duende.IdentityServer.Models.ApiResource;
+using ApiResource = Duende.IdentityServer.Storage.Models.ApiResource;
+using Secret = Duende.IdentityServer.Storage.Models.Secret;
 
-namespace UnitTests.Mappers;
+namespace EntityFramework.Storage.UnitTests.Mappers;
 
 public class ApiResourceMappersTests
 {
@@ -62,11 +64,11 @@ public class ApiResourceMappersTests
     [Fact]
     public void missing_values_should_use_defaults()
     {
-        var entity = new Duende.IdentityServer.EntityFramework.Entities.ApiResource
+        var entity = new Duende.IdentityServer.EntityFramework.Storage.Entities.ApiResource
         {
-            Secrets = new System.Collections.Generic.List<Duende.IdentityServer.EntityFramework.Entities.ApiResourceSecret>
+            Secrets = new System.Collections.Generic.List<ApiResourceSecret>
             {
-                new Duende.IdentityServer.EntityFramework.Entities.ApiResourceSecret
+                new ApiResourceSecret
                 {
                 }
             }
@@ -74,7 +76,7 @@ public class ApiResourceMappersTests
 
         var def = new ApiResource
         {
-            ApiSecrets = { new Duende.IdentityServer.Models.Secret("foo") }
+            ApiSecrets = { new Secret("foo") }
         };
 
         var model = entity.ToModel();

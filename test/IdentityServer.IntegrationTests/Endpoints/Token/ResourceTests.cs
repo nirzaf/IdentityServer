@@ -2,19 +2,20 @@
 // See LICENSE in the project root for license information.
 
 
-using FluentAssertions;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Test;
-using IntegrationTests.Common;
-using Xunit;
-using System.IdentityModel.Tokens.Jwt;
+using FluentAssertions;
 using IdentityModel.Client;
-using System.Linq;
+using IdentityServer.IntegrationTests.Common;
+using Xunit;
 
-namespace IntegrationTests.Endpoints.Token;
+namespace IdentityServer.IntegrationTests.Endpoints.Token;
 
 public class ResourceTests
 {

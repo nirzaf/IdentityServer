@@ -3,7 +3,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace IdentityServerHost.Pages.Logout;
+namespace IdentityServerHost.Pages.Account.Logout;
 
 public class LoggedOutViewModel
 {

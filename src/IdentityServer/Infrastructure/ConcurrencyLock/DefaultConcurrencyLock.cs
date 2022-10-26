@@ -6,7 +6,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.Internal;
+namespace Duende.IdentityServer.Infrastructure.ConcurrencyLock;
 
 /// <summary>
 /// Default implementation.

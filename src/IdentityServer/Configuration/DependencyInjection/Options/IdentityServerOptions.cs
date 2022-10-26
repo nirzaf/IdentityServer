@@ -2,9 +2,9 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Stores.Serialization;
+using Duende.IdentityServer.Storage.Stores.Serialization;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.Options;
 
 /// <summary>
 /// The IdentityServerOptions class is the top level container for all configuration settings of IdentityServer.

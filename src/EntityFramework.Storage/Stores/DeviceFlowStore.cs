@@ -5,17 +5,17 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Interfaces;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Services;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Storage.Stores.Serialization;
 using IdentityModel;
-using Duende.IdentityServer.EntityFramework.Entities;
-using Duende.IdentityServer.EntityFramework.Interfaces;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Stores.Serialization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Duende.IdentityServer.Services;
 
-namespace Duende.IdentityServer.EntityFramework.Stores;
+namespace Duende.IdentityServer.EntityFramework.Storage.Stores;
 
 /// <summary>
 /// Implementation of IDeviceFlowStore thats uses EF.

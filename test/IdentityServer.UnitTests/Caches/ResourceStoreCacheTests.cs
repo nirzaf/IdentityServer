@@ -8,7 +8,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using UnitTests.Services.Default.KeyManagement;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Stores.Caching;
+using Duende.IdentityServer.Stores.InMemory;
+using IdentityServer.UnitTests.Services.Default.KeyManagement;
 using Xunit;
 
 

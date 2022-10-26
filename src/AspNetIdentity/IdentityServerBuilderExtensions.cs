@@ -4,13 +4,13 @@
 
 using System;
 using System.Linq;
-using Duende.IdentityServer;
+using Duende.IdentityServer.Configuration.DependencyInjection;
 using IdentityModel;
-using Duende.IdentityServer.AspNetIdentity;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.AspNetIdentity;
 
 /// <summary>
 /// Extension methods to add ASP.NET Identity support to IdentityServer.
@@ -48,14 +48,14 @@ public static class IdentityServerBuilderExtensions
         {
             options.Cookie.IsEssential = true;
             // we need to disable to allow iframe for authorize requests
-            options.Cookie.SameSite = AspNetCore.Http.SameSiteMode.None;
+            options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
         });
 
         builder.Services.ConfigureExternalCookie(options =>
         {
             options.Cookie.IsEssential = true;
             // https://github.com/IdentityServer/IdentityServer4/issues/2595
-            options.Cookie.SameSite = AspNetCore.Http.SameSiteMode.None;
+            options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
         });
 
         builder.Services.Configure<CookieAuthenticationOptions>(IdentityConstants.TwoFactorRememberMeScheme, options =>

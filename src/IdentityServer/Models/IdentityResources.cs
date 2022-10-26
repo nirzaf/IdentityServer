@@ -4,6 +4,7 @@
 
 using IdentityModel;
 using System.Linq;
+using Duende.IdentityServer.Storage.Models;
 
 namespace Duende.IdentityServer.Models;
 
@@ -15,7 +16,7 @@ public static class IdentityResources
     /// <summary>
     /// Models the standard openid scope
     /// </summary>
-    /// <seealso cref="IdentityServer.Models.IdentityResource" />
+    /// <seealso cref="IdentityResource" />
     public class OpenId : IdentityResource
     {
         /// <summary>
@@ -33,7 +34,7 @@ public static class IdentityResources
     /// <summary>
     /// Models the standard profile scope
     /// </summary>
-    /// <seealso cref="IdentityServer.Models.IdentityResource" />
+    /// <seealso cref="IdentityResource" />
     public class Profile : IdentityResource
     {
         /// <summary>
@@ -52,7 +53,7 @@ public static class IdentityResources
     /// <summary>
     /// Models the standard email scope
     /// </summary>
-    /// <seealso cref="IdentityServer.Models.IdentityResource" />
+    /// <seealso cref="IdentityResource" />
     public class Email : IdentityResource
     {
         /// <summary>
@@ -70,7 +71,7 @@ public static class IdentityResources
     /// <summary>
     /// Models the standard phone scope
     /// </summary>
-    /// <seealso cref="IdentityServer.Models.IdentityResource" />
+    /// <seealso cref="IdentityResource" />
     public class Phone : IdentityResource
     {
         /// <summary>
@@ -88,7 +89,7 @@ public static class IdentityResources
     /// <summary>
     /// Models the standard address scope
     /// </summary>
-    /// <seealso cref="IdentityServer.Models.IdentityResource" />
+    /// <seealso cref="IdentityResource" />
     public class Address : IdentityResource
     {
         /// <summary>

@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Models the result of JWT request validation.

@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 internal interface IAuthenticationSchemeHandler
 {

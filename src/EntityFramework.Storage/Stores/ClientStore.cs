@@ -5,14 +5,15 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.EntityFramework.Interfaces;
-using Duende.IdentityServer.EntityFramework.Mappers;
-using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.EntityFramework.Storage.Interfaces;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Services;
+using Duende.IdentityServer.Storage.Stores;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.EntityFramework.Stores;
+namespace Duende.IdentityServer.EntityFramework.Storage.Stores;
 
 /// <summary>
 /// Implementation of IClientStore thats uses EF.
@@ -56,7 +57,7 @@ public class ClientStore : IClientStore
     /// <returns>
     /// The client
     /// </returns>
-    public virtual async Task<Duende.IdentityServer.Models.Client> FindClientByIdAsync(string clientId)
+    public virtual async Task<Client> FindClientByIdAsync(string clientId)
     {
         using var activity = Tracing.StoreActivitySource.StartActivity("ClientStore.FindClientById");
         activity?.SetTag(Tracing.Properties.ClientId, clientId);

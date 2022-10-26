@@ -2,16 +2,17 @@
 // See LICENSE in the project root for license information.
 
 
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Security.Claims;
-using IdentityModel;
 using System.Linq;
-using System;
-using Duende.IdentityServer.Configuration;
+using System.Security.Claims;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
+using IdentityModel;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Base class for a validate authorize or token request

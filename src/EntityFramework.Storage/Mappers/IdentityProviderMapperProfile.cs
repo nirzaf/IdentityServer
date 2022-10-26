@@ -2,13 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
-using AutoMapper;
-using Duende.IdentityServer.Models;
 using System;
 using System.Collections.Generic;
 using System.Text.Json;
+using AutoMapper;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
 
-namespace Duende.IdentityServer.EntityFramework.Mappers;
+namespace Duende.IdentityServer.EntityFramework.Storage.Mappers;
 
 /// <summary>
 /// Defines entity/model mapping for identity provider.
@@ -21,7 +21,7 @@ public class IdentityProviderMapperProfile : Profile
     /// </summary>
     public IdentityProviderMapperProfile()
     {
-        CreateMap<Duende.IdentityServer.EntityFramework.Entities.IdentityProvider, IdentityProvider>(MemberList.Destination)
+        CreateMap<IdentityProvider, IdentityServer.Storage.Models.IdentityProvider>(MemberList.Destination)
             .ForMember(x => x.Properties, opts => opts.ConvertUsing(PropertiesConverter.Converter, x => x.Properties))
             .ReverseMap()
             .ForMember(x => x.Properties, opts => opts.ConvertUsing(PropertiesConverter.Converter, x => x.Properties));

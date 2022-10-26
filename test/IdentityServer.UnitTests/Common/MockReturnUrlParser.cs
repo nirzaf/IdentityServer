@@ -4,10 +4,11 @@
 
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Services.Default;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 public class MockReturnUrlParser : ReturnUrlParser
 {

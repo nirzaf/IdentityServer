@@ -5,7 +5,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace Duende.IdentityServer.EntityFramework.Options;
+namespace Duende.IdentityServer.EntityFramework.Storage.Options;
 
 /// <summary>
 /// Options for configuring the configuration context.

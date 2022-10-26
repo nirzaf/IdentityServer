@@ -5,7 +5,7 @@
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// User code generator using 9 digit number

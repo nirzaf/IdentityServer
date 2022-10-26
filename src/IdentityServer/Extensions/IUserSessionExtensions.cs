@@ -2,13 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
-using System;
+using Duende.IdentityServer.Models.Contexts;
+using Duende.IdentityServer.Services;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Extensions;
 
 /// <summary>
 /// Extension for IUserSession.

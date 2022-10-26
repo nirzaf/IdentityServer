@@ -2,15 +2,15 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using System;
+using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
+using IdentityModel;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Models the result of custom grant validation.

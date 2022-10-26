@@ -2,13 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Models;
-using Microsoft.AspNetCore.DataProtection;
 using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Duende.IdentityServer.Storage.Models;
+using Microsoft.AspNetCore.DataProtection;
 
-namespace Duende.IdentityServer.Stores.Serialization;
+namespace Duende.IdentityServer.Storage.Stores.Serialization;
 
 /// <summary>
 /// Options for how persisted grants are persisted.

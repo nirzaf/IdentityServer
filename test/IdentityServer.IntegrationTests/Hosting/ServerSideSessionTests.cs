@@ -2,27 +2,29 @@
 // See LICENSE in the project root for license information.
 
 
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Duende.IdentityServer;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 using Duende.IdentityServer.Stores;
 using Duende.IdentityServer.Test;
 using FluentAssertions;
-using IntegrationTests.Common;
+using IdentityModel.Client;
+using IdentityServer.IntegrationTests.Common;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Xunit;
-using IdentityModel.Client;
-using System.Collections.Generic;
-using System;
 using Microsoft.IdentityModel.JsonWebTokens;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Session;
-using FluentAssertions.Common;
-using Duende.IdentityServer;
+using Xunit;
 
-namespace IntegrationTests.Hosting;
+namespace IdentityServer.IntegrationTests.Hosting;
 
 public class ServerSideSessionTests
 {

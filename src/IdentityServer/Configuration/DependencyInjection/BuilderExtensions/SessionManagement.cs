@@ -2,15 +2,20 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Hosting;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Services.Default;
+using Duende.IdentityServer.Storage.Stores;
 using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Stores.Default;
+using Duende.IdentityServer.Stores.InMemory;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 
 /// <summary>
 /// Extension methods for adding session management

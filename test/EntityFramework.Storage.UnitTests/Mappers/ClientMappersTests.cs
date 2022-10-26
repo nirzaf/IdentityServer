@@ -4,12 +4,14 @@
 
 using System;
 using System.Linq;
-using Duende.IdentityServer.EntityFramework.Mappers;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
 using FluentAssertions;
 using Xunit;
-using Client = Duende.IdentityServer.Models.Client;
+using Client = Duende.IdentityServer.Storage.Models.Client;
+using Secret = Duende.IdentityServer.Storage.Models.Secret;
 
-namespace UnitTests.Mappers;
+namespace EntityFramework.Storage.UnitTests.Mappers;
 
 public class ClientMappersTests
 {
@@ -67,12 +69,12 @@ public class ClientMappersTests
     [Fact]
     public void duplicates_properties_in_db_map()
     {
-        var entity = new Duende.IdentityServer.EntityFramework.Entities.Client
+        var entity = new Duende.IdentityServer.EntityFramework.Storage.Entities.Client
         {
-            Properties = new System.Collections.Generic.List<Duende.IdentityServer.EntityFramework.Entities.ClientProperty>()
+            Properties = new System.Collections.Generic.List<ClientProperty>()
             {
-                new Duende.IdentityServer.EntityFramework.Entities.ClientProperty{Key = "foo1", Value = "bar1"},
-                new Duende.IdentityServer.EntityFramework.Entities.ClientProperty{Key = "foo1", Value = "bar2"},
+                new ClientProperty{Key = "foo1", Value = "bar1"},
+                new ClientProperty{Key = "foo1", Value = "bar2"},
             }
         };
 
@@ -83,11 +85,11 @@ public class ClientMappersTests
     [Fact]
     public void missing_values_should_use_defaults()
     {
-        var entity = new Duende.IdentityServer.EntityFramework.Entities.Client
+        var entity = new Duende.IdentityServer.EntityFramework.Storage.Entities.Client
         {
-            ClientSecrets = new System.Collections.Generic.List<Duende.IdentityServer.EntityFramework.Entities.ClientSecret>
+            ClientSecrets = new System.Collections.Generic.List<ClientSecret>
             {
-                new Duende.IdentityServer.EntityFramework.Entities.ClientSecret
+                new ClientSecret
                 {
                 }
             }
@@ -95,7 +97,7 @@ public class ClientMappersTests
 
         var def = new Client
         {
-            ClientSecrets = { new Duende.IdentityServer.Models.Secret("foo") }
+            ClientSecrets = { new Secret("foo") }
         };
 
         var model = entity.ToModel();

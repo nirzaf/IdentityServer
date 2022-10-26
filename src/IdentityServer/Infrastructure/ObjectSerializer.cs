@@ -5,7 +5,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Duende.IdentityServer;
+namespace Duende.IdentityServer.Infrastructure;
 
 internal static class ObjectSerializer
 {

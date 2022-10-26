@@ -4,14 +4,14 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Models.Messages;
+using Duende.IdentityServer.Services.Default;
 using Duende.IdentityServer.Stores.Default;
 using FluentAssertions;
-using UnitTests.Common;
+using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.Stores.Default;
+namespace IdentityServer.UnitTests.Stores.Default;
 
 public class DistributedCacheAuthorizationParametersMessageStoreTests
 {

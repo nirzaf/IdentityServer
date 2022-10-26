@@ -4,7 +4,7 @@
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer.Stores.Serialization;
+namespace Duende.IdentityServer.Storage.Stores.Serialization;
 
 public class ClaimLite
 {

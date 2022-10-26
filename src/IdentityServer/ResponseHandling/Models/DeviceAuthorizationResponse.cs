@@ -4,7 +4,7 @@
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer.ResponseHandling;
+namespace Duende.IdentityServer.ResponseHandling.Models;
 
 public class DeviceAuthorizationResponse
 {

@@ -2,9 +2,9 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 internal class TestIdentityServerOptions
 {

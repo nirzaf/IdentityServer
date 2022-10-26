@@ -3,15 +3,16 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Services;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.Caching;
 
 /// <summary>
 /// Caching decorator for ICorsPolicyService
 /// </summary>
-/// <seealso cref="IdentityServer.Services.ICorsPolicyService" />
+/// <seealso cref="ICorsPolicyService" />
 public class CachingCorsPolicyService<T> : ICorsPolicyService
     where T : ICorsPolicyService
 {

@@ -2,10 +2,10 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
 using System.Threading.Tasks;
+using IdentityModel;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Services.Default;
 
 /// <summary>
 /// Default handle generation service

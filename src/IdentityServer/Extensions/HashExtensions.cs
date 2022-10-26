@@ -2,12 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
 using System;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Duende.IdentityServer.Models;
+namespace Duende.IdentityServer.Extensions;
 
 /// <summary>
 /// Extension methods for hashing strings

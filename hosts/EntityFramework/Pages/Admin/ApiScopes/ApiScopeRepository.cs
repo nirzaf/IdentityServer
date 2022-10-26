@@ -1,8 +1,9 @@
-using Duende.IdentityServer.EntityFramework.DbContexts;
-using Duende.IdentityServer.EntityFramework.Entities;
-using Duende.IdentityServer.EntityFramework.Mappers;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using Duende.IdentityServer.EntityFramework.Storage.DbContexts;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using ApiScope = Duende.IdentityServer.Storage.Models.ApiScope;
 
 namespace IdentityServerHost.Pages.Admin.ApiScopes;
 
@@ -66,7 +67,7 @@ public class ApiScopeRepository
 
     public async Task CreateAsync(ApiScopeModel model)
     {
-        var scope = new Duende.IdentityServer.Models.ApiScope()
+        var scope = new ApiScope()
         {
             Name = model.Name,
             DisplayName = model.DisplayName?.Trim()

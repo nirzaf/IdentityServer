@@ -4,14 +4,15 @@
 
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
-using IdentityModel;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Models.Contexts;
+using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Validates an incoming token request using the device flow

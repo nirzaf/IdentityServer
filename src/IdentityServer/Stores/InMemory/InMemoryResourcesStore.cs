@@ -2,14 +2,15 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.InMemory;
 
 /// <summary>
 /// In-memory resource store

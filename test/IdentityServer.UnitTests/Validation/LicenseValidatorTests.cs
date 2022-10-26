@@ -4,11 +4,11 @@
 
 using System;
 using System.Security.Claims;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Default;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Validation;
+namespace IdentityServer.UnitTests.Validation;
 
 public class LicenseValidatorTests
 {

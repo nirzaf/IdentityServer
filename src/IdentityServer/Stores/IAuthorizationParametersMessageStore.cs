@@ -5,6 +5,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
 
 namespace Duende.IdentityServer.Stores;
 

@@ -1,15 +1,15 @@
 // Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
-using Duende.IdentityServer.Test;
-using Duende.IdentityServer.Validation;
-using IdentityModel;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Test;
 
 /// <summary>
 /// Implementation of IBackchannelAuthenticationUserValidator using the test user store.

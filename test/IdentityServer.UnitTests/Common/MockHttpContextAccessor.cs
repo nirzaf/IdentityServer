@@ -2,15 +2,17 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using Duende.IdentityServer.Models.Contexts;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Services.Default;
 using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Stores.Default;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace UnitTests.Common;
+namespace IdentityServer.UnitTests.Common;
 
 internal class MockHttpContextAccessor : IHttpContextAccessor
 {

@@ -6,13 +6,14 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel.Client;
-using IntegrationTests.Common;
+using IdentityServer.IntegrationTests.Common;
 using Xunit;
 
-namespace IntegrationTests.Hosting;
+namespace IdentityServer.IntegrationTests.Hosting;
 
 public class SubpathHosting
 {

@@ -2,15 +2,14 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Extensions;
-using IdentityModel;
-using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
+using IdentityModel;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Duende.IdentityServer;
+namespace Duende.IdentityServer.Extensions;
 
 /// <summary>
 /// Extensions for IdentityServerTools

@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using static Duende.IdentityServer.IdentityServerConstants;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.Options;
 
 /// <summary>
 /// Options to configure behavior of KeyManager.

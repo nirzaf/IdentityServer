@@ -4,7 +4,7 @@
 
 using Duende.IdentityServer.Extensions;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.Options;
 
 /// <summary>
 /// Options for aspects of the user interface.

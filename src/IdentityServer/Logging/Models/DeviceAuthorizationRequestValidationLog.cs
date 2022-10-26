@@ -3,11 +3,11 @@
 
 
 using System.Collections.Generic;
-using Duende.IdentityServer.Validation;
-using IdentityModel;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Validation.Models;
+using IdentityModel;
 
-namespace Duende.IdentityServer.Logging;
+namespace Duende.IdentityServer.Logging.Models;
 
 internal class DeviceAuthorizationRequestValidationLog
 {

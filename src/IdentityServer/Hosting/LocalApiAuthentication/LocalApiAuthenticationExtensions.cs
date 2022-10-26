@@ -2,14 +2,13 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer;
-using Duende.IdentityServer.Hosting.LocalApiAuthentication;
-using Microsoft.AspNetCore.Authentication;
 using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Duende.IdentityServer.Hosting.LocalApiAuthentication;
 
 /// <summary>
 /// Extensions for registering the local access token authentication handler

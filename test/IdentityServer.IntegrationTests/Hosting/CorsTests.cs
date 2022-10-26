@@ -8,14 +8,15 @@ using System.Net.Http;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Services;
 using Duende.IdentityServer.Test;
 using FluentAssertions;
-using IntegrationTests.Common;
+using IdentityServer.IntegrationTests.Common;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
-namespace IntegrationTests.Hosting;
+namespace IdentityServer.IntegrationTests.Hosting;
 
 public class CorsTests
 {

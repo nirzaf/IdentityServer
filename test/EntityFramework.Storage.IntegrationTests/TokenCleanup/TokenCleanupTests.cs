@@ -6,21 +6,25 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Duende.IdentityServer.EntityFramework;
-using Duende.IdentityServer.EntityFramework.DbContexts;
-using Duende.IdentityServer.EntityFramework.Entities;
-using Duende.IdentityServer.EntityFramework.Interfaces;
-using Duende.IdentityServer.EntityFramework.Options;
-using Duende.IdentityServer.EntityFramework.Stores;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.EntityFramework.Storage.DbContexts;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Interfaces;
+using Duende.IdentityServer.EntityFramework.Storage.Options;
+using Duende.IdentityServer.EntityFramework.Storage.Stores;
+using Duende.IdentityServer.EntityFramework.Storage.TokenCleanup;
+using Duende.IdentityServer.Storage.Stores;
 using Duende.IdentityServer.Test;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
-using IPersistedGrantStore = Duende.IdentityServer.Stores.IPersistedGrantStore;
+using ApiResource = Duende.IdentityServer.Storage.Models.ApiResource;
+using Client = Duende.IdentityServer.Storage.Models.Client;
+using IdentityResource = Duende.IdentityServer.Storage.Models.IdentityResource;
+using IPersistedGrantStore = Duende.IdentityServer.Storage.Stores.IPersistedGrantStore;
 
-namespace IntegrationTests.TokenCleanup;
+namespace EntityFramework.Storage.IntegrationTests.TokenCleanup;
 
 public class TokenCleanupTests : IntegrationTest<TokenCleanupTests, PersistedGrantDbContext, OperationalStoreOptions>
 {
@@ -150,9 +154,9 @@ public class TokenCleanupTests : IntegrationTest<TokenCleanupTests, PersistedGra
         IServiceCollection services = new ServiceCollection();
         services.AddIdentityServer()
             .AddTestUsers(new List<TestUser>())
-            .AddInMemoryClients(new List<Duende.IdentityServer.Models.Client>())
-            .AddInMemoryIdentityResources(new List<Duende.IdentityServer.Models.IdentityResource>())
-            .AddInMemoryApiResources(new List<Duende.IdentityServer.Models.ApiResource>());
+            .AddInMemoryClients(new List<Client>())
+            .AddInMemoryIdentityResources(new List<IdentityResource>())
+            .AddInMemoryApiResources(new List<ApiResource>());
 
         services.AddScoped<IPersistedGrantDbContext, PersistedGrantDbContext>(_ =>
             new PersistedGrantDbContext(options));

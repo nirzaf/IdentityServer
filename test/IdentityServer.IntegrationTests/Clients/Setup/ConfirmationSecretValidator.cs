@@ -7,9 +7,11 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.Validation.Models;
 
-namespace IntegrationTests.Clients.Setup;
+namespace IdentityServer.IntegrationTests.Clients.Setup;
 
 public class ConfirmationSecretValidator : ISecretValidator
 {

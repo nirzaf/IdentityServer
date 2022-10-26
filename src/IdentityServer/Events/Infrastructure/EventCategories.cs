@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 
-namespace Duende.IdentityServer.Events;
+namespace Duende.IdentityServer.Events.Infrastructure;
 
 /// <summary>
 /// Categories for events

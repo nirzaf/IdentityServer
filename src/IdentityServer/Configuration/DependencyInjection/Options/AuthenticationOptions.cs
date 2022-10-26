@@ -5,7 +5,7 @@
 using System;
 using Microsoft.AspNetCore.Http;
 
-namespace Duende.IdentityServer.Configuration;
+namespace Duende.IdentityServer.Configuration.DependencyInjection.Options;
 
 /// <summary>
 /// Configures the login and logout views and behavior.

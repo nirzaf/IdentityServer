@@ -3,8 +3,9 @@
 
 
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 /// <summary>
 /// Validation result for client validation

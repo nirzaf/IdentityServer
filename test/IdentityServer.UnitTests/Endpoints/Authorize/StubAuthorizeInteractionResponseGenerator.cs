@@ -3,11 +3,12 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Models.Messages;
 using Duende.IdentityServer.ResponseHandling;
-using Duende.IdentityServer.Validation;
+using Duende.IdentityServer.ResponseHandling.Models;
+using Duende.IdentityServer.Validation.Models;
 
-namespace UnitTests.Endpoints.Authorize;
+namespace IdentityServer.UnitTests.Endpoints.Authorize;
 
 internal class StubAuthorizeInteractionResponseGenerator : IAuthorizeInteractionResponseGenerator
 {

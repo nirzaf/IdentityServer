@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer.Events;
+namespace Duende.IdentityServer.Events.Infrastructure;
 
 public static class EventIds
 {

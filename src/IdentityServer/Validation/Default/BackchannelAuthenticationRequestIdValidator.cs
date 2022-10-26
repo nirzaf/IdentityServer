@@ -2,17 +2,19 @@
 // See LICENSE in the project root for license information.
 
 
+using System.Linq;
+using System.Threading.Tasks;
 using Duende.IdentityServer.Extensions;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Logging;
+using Duende.IdentityServer.Models.Contexts;
 using Duende.IdentityServer.Services;
-using Duende.IdentityServer.Stores;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Validation.Models;
 using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Default implementation of IBackchannelAuthenticationRequestIdValidator.

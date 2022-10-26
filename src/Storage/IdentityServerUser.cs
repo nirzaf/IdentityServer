@@ -2,14 +2,14 @@
 // See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Duende.IdentityServer.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
+using Duende.IdentityServer.Storage.Extensions;
+using IdentityModel;
 
-namespace Duende.IdentityServer;
+namespace Duende.IdentityServer.Storage;
 
 /// <summary>
 /// Model properties of an IdentityServer user

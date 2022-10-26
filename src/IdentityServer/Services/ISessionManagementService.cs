@@ -6,6 +6,8 @@ using Duende.IdentityServer.Stores;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 
 namespace Duende.IdentityServer.Services;
 

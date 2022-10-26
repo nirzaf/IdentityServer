@@ -5,7 +5,7 @@
 
 #pragma warning disable 1591
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Models;
 
 public enum BearerTokenUsageType
 {

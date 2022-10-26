@@ -2,15 +2,17 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Stores;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Threading.Tasks;
 using Duende.IdentityServer.Events;
+using Duende.IdentityServer.Logging;
 using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Stores;
+using Duende.IdentityServer.Validation.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Validates API secrets using the registered secret validators and parsers

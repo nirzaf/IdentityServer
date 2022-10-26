@@ -2,22 +2,23 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Models;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using Duende.IdentityServer.Configuration;
-using Duende.IdentityServer.Services;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Extensions;
+using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Models;
+using Duende.IdentityServer.Storage.Stores;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.Caching;
 
 /// <summary>
 /// Caching decorator for IResourceStore
 /// </summary>
 /// <typeparam name="T"></typeparam>
-/// <seealso cref="IdentityServer.Stores.IResourceStore" />
+/// <seealso cref="IResourceStore" />
 public class CachingResourceStore<T> : IResourceStore
     where T : IResourceStore
 {

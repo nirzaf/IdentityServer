@@ -2,6 +2,8 @@
 // See LICENSE in the project root for license information.
 
 
+using Duende.IdentityServer.Storage.Models;
+
 namespace Duende.IdentityServer.Models;
 
 /// <summary>

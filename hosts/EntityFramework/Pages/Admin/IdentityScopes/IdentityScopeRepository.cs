@@ -1,8 +1,9 @@
-using Duende.IdentityServer.EntityFramework.DbContexts;
-using Duende.IdentityServer.EntityFramework.Entities;
-using Duende.IdentityServer.EntityFramework.Mappers;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using Duende.IdentityServer.EntityFramework.Storage.DbContexts;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Mappers;
+using IdentityResource = Duende.IdentityServer.Storage.Models.IdentityResource;
 
 namespace IdentityServerHost.Pages.Admin.IdentityScopes;
 
@@ -66,7 +67,7 @@ public class IdentityScopeRepository
 
     public async Task CreateAsync(IdentityScopeModel model)
     {
-        var scope = new Duende.IdentityServer.Models.IdentityResource()
+        var scope = new IdentityResource()
         {
             Name = model.Name,
             DisplayName = model.DisplayName?.Trim()

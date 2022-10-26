@@ -2,20 +2,20 @@
 // See LICENSE in the project root for license information.
 
 
-using Duende.IdentityServer.Configuration;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Duende.IdentityServer.Configuration.DependencyInjection;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using Duende.IdentityServer.Hosting;
-using Duende.IdentityServer.Services;
+using Duende.IdentityServer.Storage.Services;
 using FluentAssertions;
+using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using UnitTests.Common;
 using Xunit;
 
-namespace UnitTests.Cors;
+namespace IdentityServer.UnitTests.Cors;
 
 public class PolicyProviderTests
 {

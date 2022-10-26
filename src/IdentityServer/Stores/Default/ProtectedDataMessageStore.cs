@@ -2,15 +2,16 @@
 // See LICENSE in the project root for license information.
 
 
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.DataProtection;
-using IdentityModel;
-using System.Text;
 using System;
-using Duende.IdentityServer.Models;
+using System.Text;
+using System.Threading.Tasks;
+using Duende.IdentityServer.Infrastructure;
+using Duende.IdentityServer.Models.Messages;
+using IdentityModel;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Logging;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.Default;
 
 /// <summary>
 /// IMessageStore implementation that uses data protection to protect message.

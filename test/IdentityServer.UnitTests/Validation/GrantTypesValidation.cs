@@ -5,10 +5,11 @@
 using System;
 using System.Collections.Generic;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Storage.Models;
 using FluentAssertions;
 using Xunit;
 
-namespace UnitTests.Validation;
+namespace IdentityServer.UnitTests.Validation;
 
 public class GrantTypesValidation
 {

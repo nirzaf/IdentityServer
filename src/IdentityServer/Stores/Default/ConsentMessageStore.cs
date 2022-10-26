@@ -3,9 +3,10 @@
 
 
 using System.Threading.Tasks;
-using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Infrastructure;
+using Duende.IdentityServer.Models.Messages;
 
-namespace Duende.IdentityServer.Stores;
+namespace Duende.IdentityServer.Stores.Default;
 
 internal class ConsentMessageStore : IConsentMessageStore
 {

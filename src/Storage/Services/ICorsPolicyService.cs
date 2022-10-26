@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 
-namespace Duende.IdentityServer.Services;
+namespace Duende.IdentityServer.Storage.Services;
 
 /// <summary>
 /// Service that determines if CORS is allowed.

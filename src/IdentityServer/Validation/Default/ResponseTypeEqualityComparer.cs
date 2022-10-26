@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 /// <summary>
 /// Compares resource_type strings, where the order of space-delimited values is insignificant.

@@ -4,14 +4,14 @@
 
 using System.Collections.Specialized;
 using System.Threading.Tasks;
-using Duende.IdentityServer.Configuration;
+using Duende.IdentityServer.Configuration.DependencyInjection.Options;
 using FluentAssertions;
 using IdentityModel;
-using UnitTests.Common;
-using UnitTests.Validation.Setup;
+using IdentityServer.UnitTests.Common;
+using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace UnitTests.Validation.AuthorizeRequest_Validation;
+namespace IdentityServer.UnitTests.Validation.AuthorizeRequest_Validation;
 
 public class Authorize_ClientValidation_Token
 {

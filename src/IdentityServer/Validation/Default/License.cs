@@ -4,8 +4,9 @@
 
 using System;
 using System.Security.Claims;
+using Duende.IdentityServer.Infrastructure;
 
-namespace Duende.IdentityServer.Validation;
+namespace Duende.IdentityServer.Validation.Default;
 
 internal class License
 {

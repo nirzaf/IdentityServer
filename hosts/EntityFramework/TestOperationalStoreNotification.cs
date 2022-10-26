@@ -3,7 +3,8 @@
 
 
 using Duende.IdentityServer.EntityFramework;
-using Duende.IdentityServer.EntityFramework.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.Entities;
+using Duende.IdentityServer.EntityFramework.Storage.TokenCleanup;
 
 namespace IdentityServerHost;
 

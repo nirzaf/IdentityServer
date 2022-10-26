@@ -1,8 +1,7 @@
-
-using Microsoft.AspNetCore.Authentication;
 using System;
+using Microsoft.AspNetCore.Authentication;
 
-namespace UnitTests.Services.Default.KeyManagement;
+namespace IdentityServer.UnitTests.Services.Default.KeyManagement;
 
 class MockClock : ISystemClock
 {
